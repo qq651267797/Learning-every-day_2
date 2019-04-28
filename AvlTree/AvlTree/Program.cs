@@ -55,11 +55,11 @@ namespace AvlTree_namespace
             return this.Height(this.Root);
         }
         //
-        private int Max(int a,int b)
-        {
-            //为真则执行a，否则执行b
-            return a > b ? a : b;
-        }
+        //private int Max(int a,int b)
+        //{
+        //    //为真则执行a，否则执行b
+        //    return a > b ? a : b;
+        //}
         /// <summary>
         /// 
         ///            a                b
@@ -150,13 +150,307 @@ namespace AvlTree_namespace
             return RightRightRotation(node);
         }
 
+        public AvlTree InsertNode(AvlTree tree,int item)
+        {
+            if (tree == null) {
+                tree = new AvlTree(item);
+            }
+            else {
+                bool IsFindSameNode = this.LookSameNode(this.Root, item);
+                if (IsFindSameNode == true) {
+                    return tree;
+                }
+                else {
+                    if (item < tree.Data) {
+                        tree.LeftChild = InsertNode(tree.LeftChild, item);
+
+                        if (Height(tree.LeftChild) - Height(tree.RightChild) == 2) {
+                            if ((item > tree.LeftChild.Data ? 1 : -1) < 0) {
+                                tree = LeftLeftRotation(tree);
+                            }
+                            else {
+                                tree = LeftRightRotation(tree);
+                            }
+                        }
+                    }
+
+                    else if (item > tree.Data) {
+                        tree.RightChild = InsertNode(tree.RightChild, item);
+
+                        if (Height(tree.RightChild) - Height(tree.LeftChild) == 2) {
+                            if ((item > tree.RightChild.Data ? 1 : -1) > 0) {
+                                tree = RightRightRotation(tree);
+                            }
+                            else {
+                                tree = RightLeftRotation(tree);
+                            }
+                        }
+                    }
+
+                    else {
+                        Console.Write("插入失败");
+                    }
+                }
+            }
+
+            tree.Height = Math.Max(Height(tree.LeftChild), Height(tree.RightChild)) + 1;
+            return tree;
+        }
+        public void InsertNode(int item)
+        {
+            Root = InsertNode(Root, item);
+        }
+        /// <summary>
+        /// 查找插入的节点的数据，是否和树中的重复，重复则返回
+        /// </summary>
+        /// <param name="node"></param>
+        /// <param name="item"></param>
+        /// <returns></returns>
+        private bool LookSameNode(AvlTree node, int item)
+        {
+            if (node == null) {
+                return false;
+            }
+            if (node.Data == item) {
+                return true;
+            }
+            else if (item < node.Data) {
+                return this.LookSameNode(node.LeftChild, item);
+            }
+            else {
+                return this.LookSameNode(node.RightChild, item);
+            }
+        }
+        /// <summary>
+        /// 中序遍历
+        /// Inorder Traversal
+        /// </summary>
+        public void InorderTraversal()  //中序
+        {
+            this.InorderTraversal(this.Root);
+        }
+        private void InorderTraversal(AvlTree node)
+        {
+            if (node == null) {
+                return;
+            }
+            this.InorderTraversal(node.LeftChild);
+            Console.Write(node.Data + " ,");
+            this.InorderTraversal(node.RightChild);
+        }
+
+        /// <summary>
+        /// 树形打印一棵树
+        /// </summary>
+        /// <param name="tree"></param>
+        public void PrintTree4(AvlTree tree)
+        {
+            if (this.Root == null) {
+                //Console.WriteLine("null");
+                return;
+            }
+            Queue<AvlTree> queue = new Queue<AvlTree>();
+            AvlTree str = new AvlTree() { StrData = "*" };
+            queue.Enqueue(tree);
+            int Level = this.NodeDepth(this.Root);
+
+            AvlTree temp;
+            AvlTree NowLast = this.Root;
+            AvlTree NextLast = null;
+            bool LayerFirst = true;
 
 
+            while (queue.Count > 0) {
+                temp = queue.Dequeue();
+                double First = this.BackFirst(Level);
+                double After = this.BackAfter(Level);
+                if (LayerFirst == true) {
+                    this.PrintSpace(First);
+                }
+
+                if (temp.Data == 0) {
+                    Console.Write(temp.StrData);
+                    LayerFirst = false;
+                }
+                else {
+                    //Console.Write(temp.Data);
+                    Console.Write(temp.Data);
+                    LayerFirst = false;
+                }
+                if (LayerFirst == false) {
+                    this.PrintSpace(After);
+                }
+
+                if (temp.LeftChild == null) {
+                    queue.Enqueue(str);
+                }
+                else {
+                    queue.Enqueue(temp.LeftChild);
+                    NextLast = temp.LeftChild;
+                }
+
+
+                if (temp.RightChild == null) {
+                    queue.Enqueue(str);
+                }
+                else {
+                    queue.Enqueue(temp.RightChild);
+                    NextLast = temp.RightChild;
+                }
+
+
+                if (temp == NowLast) {
+                    //if (temp != this.Root && temp.ParentNode.RightChild == null) {
+                    //    //After = this.BackAfter(Level);
+                    //    //this.PrintSpace(After);
+                    //    temp = queue.Dequeue();
+                    //    Console.Write(temp.StrData);
+
+                    //}
+                    Console.WriteLine();
+                    LayerFirst = true;
+                    Level--;
+                    NowLast = NextLast;
+                }
+                if (Level == 0) {
+                    return;
+                }
+
+            }
+        }
+        private void PrintSpace(double SpaceData)
+        {
+            for (int i = 0; i < SpaceData; i++) {
+                Console.Write(" ");
+            }
+        }
+
+        private double BackFirst(int Level)
+        {
+            double n = 1;
+
+            n = Math.Pow(2, Level) - 1;
+            return n;  //返回第一个数字  空格的数量
+        }
+        private double BackAfter(int Level)
+        {
+            double n, m;
+            n = m = 1;
+
+            n = Math.Pow(2, Level) - 1;
+            m = (2 * n) + 1;
+            return m;//返回第二个数字及以后的  空格的数量
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="node"></param>
+        /// <returns></returns>
+        private int NodeDepth(AvlTree node)
+        {
+            if (node == null) {
+                return 0;
+            }
+            int LeftDepth = NodeDepth(node.LeftChild);
+            int RightDepth = NodeDepth(node.RightChild);
+            return Math.Max(LeftDepth, RightDepth) + 1;
+        }
+        /// <summary>
+        /// 发现树中最小的节点
+        /// </summary>
+        /// <returns></returns>
+        public int FindMin(AvlTree temp)
+        {
+            //AvlTree temp = this.Root;
+            while (temp.LeftChild != null) {
+                temp = temp.LeftChild;
+            }
+            return temp.Data;
+        }
+        /// <summary>
+        /// 发现 树中最大的节点
+        /// </summary>
+        /// <param name="temp"></param>
+        /// <returns></returns>
+        public int FindMax(AvlTree temp)
+        {
+            //AvlTree temp = this.Root;
+            while (temp.RightChild != null) {
+                temp = temp.RightChild;
+            }
+            return temp.Data;
+        }
+        /// <summary>
+        /// 树的清空操作
+        /// </summary>
+        public void ClearTree()
+        {
+            this.ClearTree(this.Root);
+            this.Root = null;
+        }
+        private void ClearTree(AvlTree tree)
+        {
+            if (tree != null) {
+                this.ClearTree(tree.LeftChild);
+                tree.LeftChild = null;
+                this.ClearTree(tree.RightChild);
+                tree.RightChild = null;
+            }
+        }
     }
     class MM
     {
         static void Main(string[] args)
         {
+            MyAvlTree ff = new MyAvlTree();
+            //Test1
+            Console.WriteLine("Test1: ------------");
+            ff.InsertNode(1);
+            ff.InsertNode(2);
+            ff.InsertNode(3);
+            ff.InsertNode(3);
+            ff.InorderTraversal();
+            Console.WriteLine();
+            ff.PrintTree4(ff.Root);
+            Console.WriteLine();
+            ff.ClearTree();
+
+            ////Test2
+            Console.WriteLine("Test2: ------------");
+            ff.InsertNode(6);
+            ff.InsertNode(5);
+            ff.InsertNode(4);
+            ff.InsertNode(4);
+            ff.PrintTree4(ff.Root);
+            Console.WriteLine();
+            ff.ClearTree();
+
+            //Test3
+            Console.WriteLine("Test3: ------------");
+            ff.InsertNode(2);
+            ff.InsertNode(4);
+            ff.InsertNode(5);
+            ff.InsertNode(6);
+            ff.InsertNode(7);
+            ff.InsertNode(8);
+            ff.InsertNode(8);
+            ff.PrintTree4(ff.Root);
+            Console.WriteLine();
+            ff.ClearTree();
+
+            //Test4
+            Console.WriteLine("Test4: ------------");
+            ff.InsertNode(3);
+            ff.InsertNode(5);
+            ff.InsertNode(6);
+            ff.InsertNode(7);
+            ff.InsertNode(8);
+            ff.InsertNode(12);
+            ff.PrintTree4(ff.Root);
+            Console.WriteLine();
+            ff.ClearTree();
+
+            Console.ReadKey();
         }
     }
 }
