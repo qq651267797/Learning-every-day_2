@@ -1,7 +1,0 @@
-D:\MyData\feijm\source\repos\Tree5\Tree5\bin\Debug\Tree5.exe.config
-D:\MyData\feijm\source\repos\Tree5\Tree5\bin\Debug\Tree5.exe
-D:\MyData\feijm\source\repos\Tree5\Tree5\bin\Debug\Tree5.pdb
-D:\MyData\feijm\source\repos\Tree5\Tree5\obj\Debug\Tree5.csprojAssemblyReference.cache
-D:\MyData\feijm\source\repos\Tree5\Tree5\obj\Debug\Tree5.csproj.CoreCompileInputs.cache
-D:\MyData\feijm\source\repos\Tree5\Tree5\obj\Debug\Tree5.exe
-D:\MyData\feijm\source\repos\Tree5\Tree5\obj\Debug\Tree5.pdb

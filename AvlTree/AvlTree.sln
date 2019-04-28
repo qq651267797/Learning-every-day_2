@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tree5", "Tree5\Tree5.csproj", "{E14D555F-0CED-4091-B6F0-FC081FF30924}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvlTree", "AvlTree\AvlTree.csproj", "{D7B1546D-18C9-486C-91D7-2ABCCBA119DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E14D555F-0CED-4091-B6F0-FC081FF30924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E14D555F-0CED-4091-B6F0-FC081FF30924}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E14D555F-0CED-4091-B6F0-FC081FF30924}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E14D555F-0CED-4091-B6F0-FC081FF30924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7B1546D-18C9-486C-91D7-2ABCCBA119DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7B1546D-18C9-486C-91D7-2ABCCBA119DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7B1546D-18C9-486C-91D7-2ABCCBA119DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7B1546D-18C9-486C-91D7-2ABCCBA119DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {7AAC9C1C-8C29-491A-BA49-10228A7B0D47}
+		SolutionGuid = {F5DB1CE0-596B-484F-990E-A6A9782626BD}
 	EndGlobalSection
 EndGlobal
