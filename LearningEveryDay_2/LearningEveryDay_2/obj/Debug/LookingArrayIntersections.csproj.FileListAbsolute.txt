@@ -1,0 +1,7 @@
+D:\Git\Learning-every-day_2\LearningEveryDay_2\LearningEveryDay_2\bin\Debug\LearningEveryDay_2.exe.config
+D:\Git\Learning-every-day_2\LearningEveryDay_2\LearningEveryDay_2\bin\Debug\LearningEveryDay_2.exe
+D:\Git\Learning-every-day_2\LearningEveryDay_2\LearningEveryDay_2\bin\Debug\LearningEveryDay_2.pdb
+D:\Git\Learning-every-day_2\LearningEveryDay_2\LearningEveryDay_2\obj\Debug\LookingArrayIntersections.csprojAssemblyReference.cache
+D:\Git\Learning-every-day_2\LearningEveryDay_2\LearningEveryDay_2\obj\Debug\LookingArrayIntersections.csproj.CoreCompileInputs.cache
+D:\Git\Learning-every-day_2\LearningEveryDay_2\LearningEveryDay_2\obj\Debug\LearningEveryDay_2.exe
+D:\Git\Learning-every-day_2\LearningEveryDay_2\LearningEveryDay_2\obj\Debug\LearningEveryDay_2.pdb
