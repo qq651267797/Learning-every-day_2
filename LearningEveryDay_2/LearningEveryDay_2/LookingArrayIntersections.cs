@@ -23,9 +23,11 @@ namespace LookingArrayIntersections
     //我们可以不考虑输出结果的顺序。
 
     // ArrayList 和 int 和 Array的区别在哪里呢
+    // 
     // 还有List 和 LinkList的区别
+    // List和LinkList的区别是,,List是有限制里面的内容的 限制参数
     // Convert.ToInt32 16 到底是一个什么样的存在
-    //
+    // Convert 是不是和(int)一样的用法
     
     class Tool2
     {

@@ -1,0 +1,6 @@
+D:\Git\Learning-every-day_2\LearningEveryDay_2\HappyNumber\bin\Debug\HappyNumber.exe.config
+D:\Git\Learning-every-day_2\LearningEveryDay_2\HappyNumber\bin\Debug\HappyNumber.exe
+D:\Git\Learning-every-day_2\LearningEveryDay_2\HappyNumber\bin\Debug\HappyNumber.pdb
+D:\Git\Learning-every-day_2\LearningEveryDay_2\HappyNumber\obj\Debug\HappyNumber.csproj.CoreCompileInputs.cache
+D:\Git\Learning-every-day_2\LearningEveryDay_2\HappyNumber\obj\Debug\HappyNumber.exe
+D:\Git\Learning-every-day_2\LearningEveryDay_2\HappyNumber\obj\Debug\HappyNumber.pdb
