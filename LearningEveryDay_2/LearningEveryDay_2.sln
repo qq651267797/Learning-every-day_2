@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "快乐数HappyNumber", "Hap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "宝石与石头GemsAndStones", "GemsAndStones\宝石与石头GemsAndStones.csproj", "{BBBADCC4-82F2-4885-8DB7-8C8A2CA10540}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "两数相加TwoSum", "TwoSum\两数相加TwoSum.csproj", "{6981DACB-F492-4673-ABFF-2CCFF30139B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BBBADCC4-82F2-4885-8DB7-8C8A2CA10540}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBBADCC4-82F2-4885-8DB7-8C8A2CA10540}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBBADCC4-82F2-4885-8DB7-8C8A2CA10540}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6981DACB-F492-4673-ABFF-2CCFF30139B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6981DACB-F492-4673-ABFF-2CCFF30139B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6981DACB-F492-4673-ABFF-2CCFF30139B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6981DACB-F492-4673-ABFF-2CCFF30139B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

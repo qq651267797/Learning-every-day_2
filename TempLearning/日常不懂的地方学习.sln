@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "基础语法方面", "Conso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mysql_Operating", "Mysql_Operating\Mysql_Operating.csproj", "{F313D3DF-BB2E-45E5-BFAE-0F194E12B225}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sort", "Sort\Sort.csproj", "{D0F9741E-F4E0-4B16-8260-5C306A47EC24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F313D3DF-BB2E-45E5-BFAE-0F194E12B225}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F313D3DF-BB2E-45E5-BFAE-0F194E12B225}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F313D3DF-BB2E-45E5-BFAE-0F194E12B225}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0F9741E-F4E0-4B16-8260-5C306A47EC24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0F9741E-F4E0-4B16-8260-5C306A47EC24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0F9741E-F4E0-4B16-8260-5C306A47EC24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0F9741E-F4E0-4B16-8260-5C306A47EC24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
