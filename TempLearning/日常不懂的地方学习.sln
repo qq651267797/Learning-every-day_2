@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "基础语法方面", "ConsoleApp9\基础语法方面.csproj", "{2476849E-D52B-4A9D-A735-F93E538882F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mysql_Operating", "Mysql_Operating\Mysql_Operating.csproj", "{F313D3DF-BB2E-45E5-BFAE-0F194E12B225}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2476849E-D52B-4A9D-A735-F93E538882F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2476849E-D52B-4A9D-A735-F93E538882F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2476849E-D52B-4A9D-A735-F93E538882F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2476849E-D52B-4A9D-A735-F93E538882F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F313D3DF-BB2E-45E5-BFAE-0F194E12B225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F313D3DF-BB2E-45E5-BFAE-0F194E12B225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F313D3DF-BB2E-45E5-BFAE-0F194E12B225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F313D3DF-BB2E-45E5-BFAE-0F194E12B225}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD36FE4F-2DED-4556-8AA9-0550DD1C3341}
+	EndGlobalSection
+EndGlobal
