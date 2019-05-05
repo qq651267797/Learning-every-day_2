@@ -5,3 +5,10 @@ D:\Git\Learning-every-day_2\LearningEveryDay_2\LearningEveryDay_2\obj\Debug\Look
 D:\Git\Learning-every-day_2\LearningEveryDay_2\LearningEveryDay_2\obj\Debug\LookingArrayIntersections.csproj.CoreCompileInputs.cache
 D:\Git\Learning-every-day_2\LearningEveryDay_2\LearningEveryDay_2\obj\Debug\LearningEveryDay_2.exe
 D:\Git\Learning-every-day_2\LearningEveryDay_2\LearningEveryDay_2\obj\Debug\LearningEveryDay_2.pdb
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\LearningEveryDay_2\bin\Debug\LearningEveryDay_2.exe.config
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\LearningEveryDay_2\bin\Debug\LearningEveryDay_2.exe
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\LearningEveryDay_2\bin\Debug\LearningEveryDay_2.pdb
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\LearningEveryDay_2\obj\Debug\LookingArrayIntersections.csprojAssemblyReference.cache
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\LearningEveryDay_2\obj\Debug\LookingArrayIntersections.csproj.CoreCompileInputs.cache
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\LearningEveryDay_2\obj\Debug\LearningEveryDay_2.exe
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\LearningEveryDay_2\obj\Debug\LearningEveryDay_2.pdb
