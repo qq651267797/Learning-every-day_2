@@ -26,7 +26,7 @@ namespace GemsAndStones_namespace
         public int NumberIntersections(string A,string B)
         {
             int num = 0;
-            if (A == null || B == null || A.Length == 0 || B.Length == null) {
+            if (A == null || B == null || A.Length == 0 || B.Length == 0) {
                 return num;
             }
             for(int i = 0; i < A.Length; i++) {
@@ -38,18 +38,19 @@ namespace GemsAndStones_namespace
             }
             return num;
         }
+        //下面这个是错误示范
         //public int NumberIntersections2(string A, string B)
         //{
         //    int num = 0;
         //    for (int i = 0; i < A.Length; i++) {
         //        //for (int j = 0; j < B.Length; j++) {
-        //            if (B.Contains(A[i].ToString())) {
-        //                num++;
-        //            }
-        //            //写反了
-        //            //if (A[i].ToString().Contains(B)) {
-        //            //    num++;
-        //            //}
+        //        if (B.Contains(A[i].ToString())) {
+        //            num++;
+        //        }
+        //        //写反了
+        //        //if (A[i].ToString().Contains(B)) {
+        //        //    num++;
+        //        //}
         //        //}
         //    }
         //    return num;
@@ -58,6 +59,7 @@ namespace GemsAndStones_namespace
         {
             int num = 0;
             List<char> AList = new List<char>();
+
             for(int i = 0; i < A.Length; i++) {
                 AList.Add(A[i]);
             }

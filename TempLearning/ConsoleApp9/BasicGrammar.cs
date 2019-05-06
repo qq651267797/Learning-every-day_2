@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp9
+namespace BasicGrammar_namespace
 {
-    class Program
+    class BasicGrammar
     { 
 
         static void Main(string[] args)
@@ -28,7 +28,7 @@ namespace ConsoleApp9
             //    //output:"1,2,3,4,5"
             //}
 
-            //3，Equals 和 ==的区别   
+            //3，Equals 和 ==的区别   不区分大小写
             //int[] n = new int[] { 1, 2, 3, 4, 5, 6 }; 
             //int[] m = new int[] { 1, 2, 3, 4, 5, 6 };
             //Console.WriteLine("是否等于: " + n.Equals(m));    //Fasle
@@ -49,11 +49,31 @@ namespace ConsoleApp9
             //Console.WriteLine(string.Format("{0:D5}", i));
             //都是输出 "00001"
 
+            //5，不允许除以0
+            //int i = 10;
+            //int j = 0;
+            //Console.WriteLine(i / j);
+
+            //6，sring的length 和 非空string 
+            //和三目运算  ? : ;
+            //string s = "";
+            //bool flag = true;
+            //flag = (s.Length) > 0 ? flag : !flag;
+            //Console.WriteLine(flag);
+            //flag = (s == null) ? flag : !flag;
+            //Console.WriteLine(flag);
+
+            //7，可空类型
+            //int? aa = null;
+            //aa = 33;
+            //Console.WriteLine(aa.HasValue);  //True
+            //Console.WriteLine(aa.Value);  //33
+            //if (aa.HasValue) {
+            //    int bb = aa.Value;
+            //    Console.WriteLine(bb);    //33
+            //}
 
             Console.ReadKey();
-
-
-
         }
     }
 }

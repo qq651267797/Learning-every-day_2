@@ -19,11 +19,34 @@ namespace AddingTwoNumbers_namespace
 
     class AddingTwoNumbers
     {
+        /// <summary>
+        /// 对数组 插入排序
+        /// </summary>
+        /// <param name="ArraryList1"></param>
+        //private void InsertSort(int[] Arr)
+        //{
+        //    for (int a = 1; a < Arr.Length; a++) {
+        //        int b = Arr[a];
+        //        int c = a;
+        //        while ((c > 0) && (Arr[c - 1]) > b) {
+        //            Arr[c] = Arr[c - 1];
+        //            c--;
+        //        }
+        //        Arr[c] = b;
+        //    }
+        //}
+
         public int[] TwoSum(int[] A,int Together)
         {
+            //InsertSort(A);  没有意义
+
             int[] FinallyList = new int[2];
 
             for(int i = 0; i < A.Length; i++) {
+                //不可以这样，
+                //if (A[i] > Together) {
+                //    return FinallyList;
+                //}
                 for(int j = i + 1; j < A.Length; j++) {
                     if (A[i] + A[j] == Together) {
                         FinallyList[0] = i;
@@ -41,8 +64,9 @@ namespace AddingTwoNumbers_namespace
         {
             AddingTwoNumbers ff = new AddingTwoNumbers();
             int[] num = { 3, 5, 9, 12, 16, 5, 6 };
-            int[] FinallyList = ff.TwoSum(num, 110);
-            Console.WriteLine("{0} , {1}", FinallyList[0], FinallyList[1]);
+            int Together = 11;
+            int[] FinallyList = ff.TwoSum(num, Together);
+            Console.WriteLine("数组中的第{0}个数 和 第{1}个数相加 等于" + Together, FinallyList[0], FinallyList[1]);
 
             Console.ReadKey();
         }

@@ -68,7 +68,6 @@ namespace LookingArrayIntersections
                 for (int j = 0; j < b.Length; j++) {
                     if (b[j] == temp && !(SetList.Contains(temp))) {
                         SetList.Add(temp);
-                        break;
                     }
                 }
             }
@@ -90,7 +89,6 @@ namespace LookingArrayIntersections
         //        for (int j = 0; j < b.Length; j++) {
         //            if (b[j] == temp && !(SetList.Contains(temp))) {
         //                SetList.Add(temp);
-        //                break;
         //            }
         //        }
         //    }
@@ -126,7 +124,6 @@ namespace LookingArrayIntersections
         //        for (int j = 0; j < b.Count; j++) {
         //            if (Convert.ToInt32(b[j]) == temp && !(SetList.Contains(temp))) {
         //                SetList.Add(temp);
-        //                break;
         //            }
         //        }
         //    }
