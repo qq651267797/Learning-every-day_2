@@ -73,6 +73,19 @@ namespace BasicGrammar_namespace
             //    Console.WriteLine(bb);    //33
             //}
 
+            //4.1 进制之间的转换
+            Console.WriteLine("{0:X}",'A');
+            char A = 'A';
+            string X = "AB";
+            int value = Convert.ToInt32(A);
+            Console.WriteLine(Convert.ToInt32(A));  //65
+            Console.WriteLine(value);
+            //char C =  value += 32; 
+            string B = string.Format("0x{0:X}", value);
+            Console.WriteLine(value);
+            Console.WriteLine(B);
+
+
             Console.ReadKey();
         }
     }

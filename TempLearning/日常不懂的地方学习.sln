@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "基础语法方面", "Conso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mysql_Operating", "Mysql_Operating\Mysql_Operating.csproj", "{F313D3DF-BB2E-45E5-BFAE-0F194E12B225}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAlgorithm", "Sort\SimpleAlgorithm.csproj", "{D0F9741E-F4E0-4B16-8260-5C306A47EC24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "简单的算法SimpleAlgorithm", "Sort\简单的算法SimpleAlgorithm.csproj", "{D0F9741E-F4E0-4B16-8260-5C306A47EC24}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Sharp语法糖", "csharp中的语法糖_新特性\C_Sharp语法糖.csproj", "{03C4104D-C74D-4FE8-AA7D-85BDE375A5D5}"
 EndProject
