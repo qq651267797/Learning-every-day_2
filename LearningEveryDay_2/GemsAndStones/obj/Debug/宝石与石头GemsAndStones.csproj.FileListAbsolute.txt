@@ -5,3 +5,10 @@ D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\GemsAnd
 D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\GemsAndStones\obj\Debug\宝石与石头GemsAndStones.csproj.CoreCompileInputs.cache
 D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\GemsAndStones\obj\Debug\GemsAndStones.exe
 D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\GemsAndStones\obj\Debug\GemsAndStones.pdb
+D:\Git\Learning-every-day_2\LearningEveryDay_2\GemsAndStones\bin\Debug\GemsAndStones.exe.config
+D:\Git\Learning-every-day_2\LearningEveryDay_2\GemsAndStones\bin\Debug\GemsAndStones.exe
+D:\Git\Learning-every-day_2\LearningEveryDay_2\GemsAndStones\bin\Debug\GemsAndStones.pdb
+D:\Git\Learning-every-day_2\LearningEveryDay_2\GemsAndStones\obj\Debug\宝石与石头GemsAndStones.csprojAssemblyReference.cache
+D:\Git\Learning-every-day_2\LearningEveryDay_2\GemsAndStones\obj\Debug\宝石与石头GemsAndStones.csproj.CoreCompileInputs.cache
+D:\Git\Learning-every-day_2\LearningEveryDay_2\GemsAndStones\obj\Debug\GemsAndStones.exe
+D:\Git\Learning-every-day_2\LearningEveryDay_2\GemsAndStones\obj\Debug\GemsAndStones.pdb

@@ -23,59 +23,22 @@ namespace GemsAndStones_namespace
 // J 中的字符不重复。
     class GemsAndStones
     {
-        public int NumberIntersections(string A,string B)
+        public int NumberIntersections(string A, string B)
         {
             int num = 0;
-            if (A == null || B == null || A.Length == 0 || B.Length == 0) {
-                return num;
-            }
-            for(int i = 0; i < A.Length; i++) {
-                for(int j = 0; j < B.Length; j++) {
-                    if (A[i].Equals(B[j])) {
-                        num++;
-                    }
-                }
-            }
-            return num;
-        }
-        //下面这个是错误示范
-        //public int NumberIntersections2(string A, string B)
-        //{
-        //    int num = 0;
-        //    for (int i = 0; i < A.Length; i++) {
-        //        //for (int j = 0; j < B.Length; j++) {
-        //        if (B.Contains(A[i].ToString())) {
-        //            num++;
-        //        }
-        //        //写反了
-        //        //if (A[i].ToString().Contains(B)) {
-        //        //    num++;
-        //        //}
-        //        //}
-        //    }
-        //    return num;
-        //}
-        public int NumberIntersections2(string A, string B)
-        {
-            int num = 0;
-            List<char> AList = new List<char>();
+            Dictionary<int, char> myDictionary = new Dictionary<int, char>();
 
             for(int i = 0; i < A.Length; i++) {
-                AList.Add(A[i]);
+                myDictionary.Add(i, A[i]);
             }
-            //foreach(char i in A){
-            //    AList.Add(i);
+            //foreach(KeyValuePair<int,char> ff in myDictionary) {
+            //    Console.WriteLine("number2 " + ff.Value);
             //}
             for(int j = 0; j < B.Length; j++) {
-                if (AList.Contains(B[j])) {
+                if (myDictionary.ContainsValue(B[j])) {
                     num++;
                 }
             }
-            //foreach(char j in B) {
-            //    if (AList.Contains(j)) {
-            //        num++;
-            //    }
-            //}
             return num;
         }
     }
@@ -87,10 +50,7 @@ namespace GemsAndStones_namespace
             string A = "aA";
             string B = "aAAbbb";
 
-            int num = ff.NumberIntersections(A, B);
-            Console.WriteLine(num);
-
-            int num2 = ff.NumberIntersections2(A, B);
+            int num2 = ff.NumberIntersections(A, B);
             Console.WriteLine(num2);
 
             Console.ReadKey();
