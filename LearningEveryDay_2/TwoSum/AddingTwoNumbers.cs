@@ -42,33 +42,33 @@ namespace AddingTwoNumbers_namespace
             for (int i = 0; i < A.Length; i++) {
                 ff.Add(key: i, value: A[i]);
             }
+
             this.InsertSort(A);
             int[] FinallyList = new int[2];
 
             for (int i = 0; i < A.Length; i++) {
                 if (A[i] > Together) {
-                    return FinallyList;
+                    break;
                 }
-                for (int j = i + 1; j < A.Length; j++) {
-                    if (A[j] > Together) {
-                        break;
+                int Compare = Together - A[i];
+                bool flag = ff.ContainsValue(Compare);
+                if (flag) {
+                    foreach(KeyValuePair<int,int> num1 in ff) {
+                        if (num1.Value == Compare) {
+                            FinallyList[0] = num1.Key;
+                        }
                     }
-                    if ((A[i] + A[j]) > Together) {
-                        break;
+                    foreach(KeyValuePair<int,int> num2 in ff) {
+                        if (num2.Value == A[i]) {
+                            FinallyList[1] = num2.Key;
+                        }
                     }
-                    else if ((A[i] + A[j]) == Together) {
-                        FinallyList[0] = A[i];
-                        FinallyList[1] = A[j];
-                        return FinallyList;
-                    }
+                    return FinallyList;
                 }
             }
             throw new Exception();
         }
-        //private int[] Find(int[] A)
-        //{
 
-        //}
     }
     class TwoSum1
     {
