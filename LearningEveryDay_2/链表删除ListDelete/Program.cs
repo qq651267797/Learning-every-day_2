@@ -49,7 +49,7 @@ namespace 链表删除ListDelete
             if (A.Data == node.Data) {
                 A.Data = A.NextNode.Data;
                 A.NextNode = A.NextNode.NextNode;
-                A.NextNode = null;
+                //A.NextNode = null;
                 return;
             }
 

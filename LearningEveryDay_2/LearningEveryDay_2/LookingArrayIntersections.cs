@@ -146,14 +146,14 @@ namespace LookingArrayIntersections
             int[] Arr_2 = { 12, 6, 0, 5, 4, 3, 10, 11 };
             //ArrayList Arrary_1 = new ArrayList() { 6, 1, 2, 6, 9, 8, 7, 2 };
             //ArrayList Arrary_2 = new ArrayList() { 12, 6, 0, 5, 4, 3, 10, 11 };
-            List<int> SetList = ff.LookArrayIntersections(Arr_1, Arr_2);
+            Dictionary<int, int> SetList = ff.LookArrayIntersections(Arr_1, Arr_2);
             //List<int> SetList2 =  ff.LookArrayIntersections2(Arrary_1, Arrary_2);
             //Console.Write(SetList.ToString());
-            for(int x = 0; x < SetList.Count; x++) {
-                Console.Write("SetList1----------------------");
-                Console.WriteLine(SetList[x]);
-
+            //for(int i=0;i<SetList.)
+            foreach(KeyValuePair<int,int> num in SetList) {
+                Console.WriteLine(SetList.Keys);
             }
+
             //for (int x = 0; x < SetList2.Count; x++) {
             //    Console.Write("SetList2---------------------");
             //    Console.WriteLine(SetList2[0]);

@@ -5,3 +5,10 @@ D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\链表�
 D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\链表删除ListDelete\obj\Debug\链表删除ListDelete.csproj.CoreCompileInputs.cache
 D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\链表删除ListDelete\obj\Debug\链表删除ListDelete.exe
 D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\链表删除ListDelete\obj\Debug\链表删除ListDelete.pdb
+D:\Git\Learning-every-day_2\LearningEveryDay_2\链表删除ListDelete\bin\Debug\链表删除ListDelete.exe.config
+D:\Git\Learning-every-day_2\LearningEveryDay_2\链表删除ListDelete\bin\Debug\链表删除ListDelete.exe
+D:\Git\Learning-every-day_2\LearningEveryDay_2\链表删除ListDelete\bin\Debug\链表删除ListDelete.pdb
+D:\Git\Learning-every-day_2\LearningEveryDay_2\链表删除ListDelete\obj\Debug\链表删除ListDelete.csprojAssemblyReference.cache
+D:\Git\Learning-every-day_2\LearningEveryDay_2\链表删除ListDelete\obj\Debug\链表删除ListDelete.csproj.CoreCompileInputs.cache
+D:\Git\Learning-every-day_2\LearningEveryDay_2\链表删除ListDelete\obj\Debug\链表删除ListDelete.exe
+D:\Git\Learning-every-day_2\LearningEveryDay_2\链表删除ListDelete\obj\Debug\链表删除ListDelete.pdb
