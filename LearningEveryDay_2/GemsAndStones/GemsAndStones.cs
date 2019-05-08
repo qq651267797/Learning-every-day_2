@@ -23,9 +23,10 @@ namespace GemsAndStones_namespace
 // J 中的字符不重复。
     class GemsAndStones
     {
-        public int NumberIntersections(string A,string B)
+        public int NumberIntersections(string A, string B)
         {
             int num = 0;
+<<<<<<< HEAD
             if (A == null || B == null || A.Length == 0 || B.Length == 0) {
                 return num;
             }
@@ -67,17 +68,21 @@ namespace GemsAndStones_namespace
             dic.
             //foreach(char i in A){
             //    AList.Add(i);
+=======
+            Dictionary<int, char> myDictionary = new Dictionary<int, char>();
+
+            for(int i = 0; i < A.Length; i++) {
+                myDictionary.Add(i, A[i]);
+            }
+            //foreach(KeyValuePair<int,char> ff in myDictionary) {
+            //    Console.WriteLine("number2 " + ff.Value);
+>>>>>>> 6b23e8023da131f0d878b531ea230d109834a33b
             //}
             for(int j = 0; j < B.Length; j++) {
-                if (AList.Contains(B[j])) {
+                if (myDictionary.ContainsValue(B[j])) {
                     num++;
                 }
             }
-            //foreach(char j in B) {
-            //    if (AList.Contains(j)) {
-            //        num++;
-            //    }
-            //}
             return num;
         }
     }
@@ -89,10 +94,7 @@ namespace GemsAndStones_namespace
             string A = "aA";
             string B = "aAAbbb";
 
-            int num = ff.NumberIntersections(A, B);
-            Console.WriteLine(num);
-
-            int num2 = ff.NumberIntersections2(A, B);
+            int num2 = ff.NumberIntersections(A, B);
             Console.WriteLine(num2);
 
             Console.ReadKey();

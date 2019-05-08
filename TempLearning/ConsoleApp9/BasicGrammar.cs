@@ -74,17 +74,22 @@ namespace BasicGrammar_namespace
             //}
 
             //4.1 进制之间的转换
-            Console.WriteLine("{0:X}",'A');
-            char A = 'A';
-            string X = "AB";
-            int value = Convert.ToInt32(A);
-            Console.WriteLine(Convert.ToInt32(A));  //65
-            Console.WriteLine(value);
-            //char C =  value += 32; 
-            string B = string.Format("0x{0:X}", value);
-            Console.WriteLine(value);
-            Console.WriteLine(B);
+            Dictionary<int, int> ff = new Dictionary<int, int>();
+            ff.Add(1, 3);
+            ff.Add(2, 4);
+            ff.Add(5, 6);
+            ff.Add(3, 33);
+            ff.Add(4, 4);
 
+            foreach(KeyValuePair<int,int> num in ff) {
+                if (num.Value == 33) {
+                    Console.WriteLine(num.Key);
+                }
+            }
+            int values = 33;
+            if (ff.ContainsValue(values)) {
+                return values.
+            }
 
             Console.ReadKey();
         }
