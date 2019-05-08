@@ -58,11 +58,13 @@ namespace GemsAndStones_namespace
         public int NumberIntersections2(string A, string B)
         {
             int num = 0;
-            List<char> AList = new List<char>();
+            //List<char> AList = new List<char>();
+            Dictionary<int, char> dic = new Dictionary<int, char>();
 
             for(int i = 0; i < A.Length; i++) {
-                AList.Add(A[i]);
+                dic.Add(i, A[i]);
             }
+            dic.
             //foreach(char i in A){
             //    AList.Add(i);
             //}
