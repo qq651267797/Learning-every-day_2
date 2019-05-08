@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "两数相加TwoSum", "TwoSu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "大小写转换CaseConversion", "CaseConversion\大小写转换CaseConversion.csproj", "{D4463DE3-747C-4ABD-8B77-4D8E36CDA935}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "链表删除ListDelete", "链表删除ListDelete\链表删除ListDelete.csproj", "{484B4BE4-483B-481B-AB52-5188055EDF6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D4463DE3-747C-4ABD-8B77-4D8E36CDA935}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4463DE3-747C-4ABD-8B77-4D8E36CDA935}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4463DE3-747C-4ABD-8B77-4D8E36CDA935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{484B4BE4-483B-481B-AB52-5188055EDF6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{484B4BE4-483B-481B-AB52-5188055EDF6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{484B4BE4-483B-481B-AB52-5188055EDF6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{484B4BE4-483B-481B-AB52-5188055EDF6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

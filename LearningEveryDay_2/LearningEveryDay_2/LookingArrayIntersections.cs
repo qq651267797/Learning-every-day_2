@@ -54,24 +54,31 @@ namespace LookingArrayIntersections
         /// </summary>
         /// <param name="a"></param>
         /// <param name="b"></param>
-        public List<int> LookArrayIntersections(int[] a, int[] b)
+        public Dictionary<int,int> LookArrayIntersections(int[] A, int[] B)
         {
-            InsertSort(a);
-            InsertSort(b);
-
-            List<int> SetList = new List<int>();
-            if (a == null || a.Length == 0 || b == null || b.Length == 0) {
-                return SetList;
+            this.InsertSort(A);
+            this.InsertSort(B);
+            //Dictionary<int, int> ADictionary = new Dictionary<int, int>();
+            Dictionary<int, int> BDictionary = new Dictionary<int, int>();
+            for (int i = 0; i < B.Length; i++) {
+                BDictionary.Add(key: i, value: A[i]);
             }
-            for (int i = 0; i < a.Length; i++) {
-                int temp = a[i];
-                for (int j = 0; j < b.Length; j++) {
-                    if (b[j] == temp && !(SetList.Contains(temp))) {
-                        SetList.Add(temp);
-                    }
+            Dictionary<int, int> IntersectDictionary = new Dictionary<int, int>();
+
+            if (A == null || A.Length == 0 || B == null || B.Length == 0) {
+                return IntersectDictionary;
+            }
+            for(int i = 0; i < A.Length; i++) {
+                int temp = A[i];
+                bool BIncludedFlag = BDictionary.ContainsValue(temp);
+                bool IntersectIncludedFlag = IntersectDictionary.ContainsValue(temp);
+                if (BIncludedFlag && !IntersectIncludedFlag) {
+                    int cur = 0;
+                    IntersectDictionary.Add(cur, temp);
+                    cur++;
                 }
             }
-            return SetList;
+            return IntersectDictionary;
         }
         //为了了解问题写出来的尝试代码
 

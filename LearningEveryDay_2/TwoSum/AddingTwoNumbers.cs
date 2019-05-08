@@ -42,7 +42,6 @@ namespace AddingTwoNumbers_namespace
             for (int i = 0; i < A.Length; i++) {
                 ff.Add(key: i, value: A[i]);
             }
-
             this.InsertSort(A);
             int[] FinallyList = new int[2];
 

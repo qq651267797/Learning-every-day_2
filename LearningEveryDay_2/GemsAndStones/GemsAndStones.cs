@@ -23,21 +23,21 @@ namespace GemsAndStones_namespace
 // J 中的字符不重复。
     class GemsAndStones
     {
-        public int NumberIntersections(string A, string B)
-        {
-            int num = 0;
-            if (A == null || B == null || A.Length == 0 || B.Length == 0) {
-                return num;
-            }
-            for(int i = 0; i < A.Length; i++) {
-                for(int j = 0; j < B.Length; j++) {
-                    if (A[i].Equals(B[j])) {
-                        num++;
-                    }
-                }
-            }
-            return num;
-        }
+        //public int NumberIntersections(string A, string B)
+        //{
+        //    int num = 0;
+        //    if (A == null || B == null || A.Length == 0 || B.Length == 0) {
+        //        return num;
+        //    }
+        //    for(int i = 0; i < A.Length; i++) {
+        //        for(int j = 0; j < B.Length; j++) {
+        //            if (A[i].Equals(B[j])) {
+        //                num++;
+        //            }
+        //        }
+        //    }
+        //    return num;
+        //}
         //下面这个是错误示范
         //public int NumberIntersections2(string A, string B)
         //{
