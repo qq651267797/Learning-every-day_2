@@ -92,7 +92,7 @@ namespace 链表删除ListDelete
             }
         }
     }
-    class Program
+    class ListDelete
     {
         static void Main(string[] args)
         {

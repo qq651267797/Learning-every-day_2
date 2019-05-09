@@ -61,7 +61,7 @@ namespace LookingArrayIntersections
             //Dictionary<int, int> ADictionary = new Dictionary<int, int>();
             Dictionary<int, int> BDictionary = new Dictionary<int, int>();
             for (int i = 0; i < B.Length; i++) {
-                BDictionary.Add(key: i, value: A[i]);
+                BDictionary.Add(key: i, value: B[i]);
             }
             Dictionary<int, int> IntersectDictionary = new Dictionary<int, int>();
 
@@ -150,24 +150,30 @@ namespace LookingArrayIntersections
             //List<int> SetList2 =  ff.LookArrayIntersections2(Arrary_1, Arrary_2);
             //Console.Write(SetList.ToString());
             //for(int i=0;i<SetList.)
-            foreach(KeyValuePair<int,int> num in SetList) {
-                Console.WriteLine(SetList.Keys);
+
+            //foreach(KeyValuePair<int,int> num in SetList) {
+            //    Console.WriteLine(SetList.Keys);
+            //}
+            foreach (KeyValuePair<int, int> num in SetList) {
+                Console.Write(num.Key + ", ");
+                Console.WriteLine(num.Value);
+                Console.WriteLine("{0}, {1}", num.Key, num.Value);
+
             }
+                //for (int x = 0; x < SetList2.Count; x++) {
+                //    Console.Write("SetList2---------------------");
+                //    Console.WriteLine(SetList2[0]);
+                //}
 
-            //for (int x = 0; x < SetList2.Count; x++) {
-            //    Console.Write("SetList2---------------------");
-            //    Console.WriteLine(SetList2[0]);
-            //}
-
-            //List<int> SetList3 = ff.LookArrayIntersections(Arr_1, Arr_2);
-            //for (int x = 0; x < SetList3.Count; x++) {
-            //    Console.Write("SetList3---------------------");
-            //    Console.WriteLine(SetList2[0]);
-            //}
-
+                //List<int> SetList3 = ff.LookArrayIntersections(Arr_1, Arr_2);
+                //for (int x = 0; x < SetList3.Count; x++) {
+                //    Console.Write("SetList3---------------------");
+                //    Console.WriteLine(SetList2[0]);
+                //}
 
 
-            Console.ReadKey();
+
+                Console.ReadKey();
         }
     }
 }

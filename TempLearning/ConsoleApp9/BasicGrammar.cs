@@ -82,14 +82,10 @@ namespace BasicGrammar_namespace
             ff.Add(4, 4);
 
             foreach(KeyValuePair<int,int> num in ff) {
-                if (num.Value == 33) {
-                    Console.WriteLine(num.Key);
-                }
+                    Console.Write(num.Key + ", ");
+                    Console.WriteLine(num.Value);
             }
-            int values = 33;
-            if (ff.ContainsValue(values)) {
-                return values.
-            }
+
 
             Console.ReadKey();
         }
