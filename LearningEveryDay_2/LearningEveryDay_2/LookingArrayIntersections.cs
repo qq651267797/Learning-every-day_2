@@ -58,6 +58,7 @@ namespace LookingArrayIntersections
         {
             this.InsertSort(A);
             this.InsertSort(B);
+
             //Dictionary<int, int> ADictionary = new Dictionary<int, int>();
             Dictionary<int, int> BDictionary = new Dictionary<int, int>();
             for (int i = 0; i < B.Length; i++) {

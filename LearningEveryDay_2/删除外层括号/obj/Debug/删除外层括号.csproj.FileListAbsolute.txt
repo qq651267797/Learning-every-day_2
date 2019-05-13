@@ -1,0 +1,7 @@
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\删除外层括号\bin\Debug\删除外层括号.exe.config
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\删除外层括号\bin\Debug\删除外层括号.exe
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\删除外层括号\bin\Debug\删除外层括号.pdb
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\删除外层括号\obj\Debug\删除外层括号.csprojAssemblyReference.cache
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\删除外层括号\obj\Debug\删除外层括号.csproj.CoreCompileInputs.cache
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\删除外层括号\obj\Debug\删除外层括号.exe
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\删除外层括号\obj\Debug\删除外层括号.pdb

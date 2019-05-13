@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "大小写转换CaseConversi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "链表删除ListDelete", "链表删除ListDelete\链表删除ListDelete.csproj", "{484B4BE4-483B-481B-AB52-5188055EDF6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "删除外层括号", "删除外层括号\删除外层括号.csproj", "{2C0CF1AE-58F6-40BE-B190-94CAA05CFDBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{484B4BE4-483B-481B-AB52-5188055EDF6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{484B4BE4-483B-481B-AB52-5188055EDF6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{484B4BE4-483B-481B-AB52-5188055EDF6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C0CF1AE-58F6-40BE-B190-94CAA05CFDBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0CF1AE-58F6-40BE-B190-94CAA05CFDBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0CF1AE-58F6-40BE-B190-94CAA05CFDBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0CF1AE-58F6-40BE-B190-94CAA05CFDBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
