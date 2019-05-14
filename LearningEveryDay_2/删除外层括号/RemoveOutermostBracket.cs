@@ -21,7 +21,8 @@ namespace 删除外层括号
         {
             //string Useless = "((";  //提供"("
             //string DisUseless = "))";   //提供")"
-
+            string outPut = "";
+            int num = 0;
             //List<char> OutputList = new List<char>();
             //List<char> tempList = new List<char>();
 
@@ -46,8 +47,19 @@ namespace 删除外层括号
 
             //    }
             //}
+            if (input.Length == 0 || input == null) {
+                return outPut;
+            }
+            for(int i = 0; i < input.Length; i++) {
+                if (input[i] == '(') {
+                    num++;
+                    outPut += input[i];
+                }
+                else {
 
-            string 
+                }
+            }
+
 
         }
     }
