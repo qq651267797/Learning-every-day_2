@@ -23,7 +23,6 @@ namespace HappyNumber_namespace
         public bool IsHappy(int n) {
             List<int> FalseList = new List<int>();
             bool flag = true;
-            FalseList.
 
             while (n != 1) {
                 int intLength = n.ToString().Length;

@@ -6,6 +6,38 @@ using System.Threading.Tasks;
 
 namespace BasicGrammar_namespace
 {
+    class tooool
+    {
+        public int temp()
+        {
+            int num = 0;
+
+            for (int i = 0; i <= 1000; i++) {
+                if (i == 10) {
+                    i++;
+                    if (i == 11) {
+                        num += i;
+                        Console.WriteLine("num1 = " + num);
+                        //return num; //return 会直接跳出这个public函数
+                        break;  //break 是只跳出这个for循环，会执行num1 和 num3
+                    }
+
+
+                }
+                if (i == 100) {
+                    num += i;
+
+                }
+                if (i == 1000) {
+                    num += i;
+                    Console.WriteLine("num2 = " + num);
+                    return num;
+                }
+            }
+            Console.WriteLine("num3 = " + num);
+            return num;
+        }
+    }
     class BasicGrammar
     { 
 
@@ -116,7 +148,49 @@ namespace BasicGrammar_namespace
             //Console.WriteLine();
             //Console.WriteLine(numQuery2Count);
 
+            //引用
+            //int b = 100;
+            //int c = 10;
+            //int a = 1;
+            //c = b;
+            //a = c;
+            //a = 100000;
+            //Console.WriteLine(a);
+            //Console.WriteLine(b);
+            //Console.WriteLine(c);
+            //10000
+            //100
+            //100
 
+
+            //string 和 char
+            //string 的长度是从0开始的
+            //string s = "123456";
+            //int j = s.Length;
+            //for(int i = 0; i < s.Length; i++) {
+            //    Console.WriteLine("string[ " + i + " ] = " + s[i]);
+            //}
+            //string s = "121416";
+            //string ss = "11";
+            //List<char> OutputList = new List<char>();
+            //for(int i = 0; i < s.Length; i++) {
+            //    char temp = s[i];
+            //    char compare = ss[0];
+            //    if (temp==compare) {
+            //        OutputList.Add(compare);
+            //    }
+            //}
+            //foreach(int temp in OutputList) {
+            //    Console.Write(temp);    ///49 49 49 
+            //    Console.WriteLine();
+            //}
+            //foreach (char temp in OutputList) {
+            //    Console.Write(temp);    ///1 1 1
+            //    Console.WriteLine();
+            //}
+
+            tooool ff = new tooool();
+            ff.temp();
 
 
 
