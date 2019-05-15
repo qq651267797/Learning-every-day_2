@@ -189,8 +189,13 @@ namespace BasicGrammar_namespace
             //    Console.WriteLine();
             //}
 
-            tooool ff = new tooool();
-            ff.temp();
+            //tooool ff = new tooool();
+            //ff.temp();
+
+            char x = '\0';
+            Console.WriteLine("X=" + x + "de");
+             x = ' ';
+
 
 
 
