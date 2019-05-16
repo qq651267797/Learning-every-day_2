@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace 删除外层括号
 {
+    //有看百度的的代码！！！！！！！
+
     //1021，删除最外层的括号
     //输入："(()())(())"
     //输出："()()()"
@@ -20,34 +22,34 @@ namespace 删除外层括号
         public List<char> RemoveBracket(string input)
         {
 
-            List<char> tempList = new List<char>();
+            List<char> OutList = new List<char>();
             if (input.Length == 0 || input == null) {
-                return tempList;
+                return OutList;
             }
             for (int i = 0; i < input.Length; i++) {
-                tempList.Add(input[i]);
-                //tempList[i] = input[i];
-                //tempList = 0; 将input赋值，也没有用，会报错溢出
+                OutList.Add(input[i]);
+                //OutList[i] = input[i];
+                //OutList = 0; 将input赋值，也没有用，会报错溢出
             }
             char space = ' ';
             string OutPut = "";
             int num = 0;
 
-            for(int i = 0; i < tempList.Count; i++) {
+            for(int i = 0; i < OutList.Count; i++) {
                 if (num == 0) {
-                    tempList[i] = space;
+                    OutList[i] = space;
                     num++;
                     continue;
                     //input = ' ';
                     ///传进来的参数是只读的，不可以修改
                 }
-                if (tempList[i] == '(') {
+                if (OutList[i] == '(') {
                     num++;
                 }
                 else {
                     num--;
                     if (num == 0) {
-                        tempList[i] = space;
+                        OutList[i] = space;
                         continue;
                     }
                     else {
@@ -55,7 +57,7 @@ namespace 删除外层括号
                     }
                 }
             }
-            return tempList;
+            return OutList;
         }
 
 
@@ -64,22 +66,22 @@ namespace 删除外层括号
         //    //string Useless = "((";  //提供"("
         //    //string DisUseless = "))";   //提供")"
         //    //List<char> OutputList = new List<char>();
-        //    //List<char> tempList = new List<char>();
+        //    //List<char> OutList = new List<char>();
 
         //    //if (input.Length == 0 || input == null) {
         //    //    return OutputList;
         //    //}
         //    //for(int i = 0; i < input.Length; i++) {
-        //    //    int tempList_int = 0;
+        //    //    int OutList_int = 0;
         //    //    //char input_data = input[i];
         //    //    if (i == 0) {
-        //    //        tempList.Add(input[i]);
+        //    //        OutList.Add(input[i]);
         //    //    }
         //    //    else {
         //    //        //Useless[0] == (  ;;;  DisUseless[0] == )
-        //    //        bool flag = tempList[i - 1] == Useless[0] && [i] == DisUseless[0];
+        //    //        bool flag = OutList[i - 1] == Useless[0] && [i] == DisUseless[0];
         //    //        if (!flag) {
-        //    //            tempList.Add(input[i]);
+        //    //            OutList.Add(input[i]);
         //    //        }
         //    //        if (flag && (--i != 0)) {
 

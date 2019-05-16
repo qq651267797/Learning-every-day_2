@@ -1,0 +1,7 @@
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\两数相加2-AddTwoNumbers\bin\Debug\两数相加2-AddTwoNumbers.exe.config
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\两数相加2-AddTwoNumbers\bin\Debug\两数相加2-AddTwoNumbers.exe
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\两数相加2-AddTwoNumbers\bin\Debug\两数相加2-AddTwoNumbers.pdb
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\两数相加2-AddTwoNumbers\obj\Debug\两数相加2-AddTwoNumbers.csprojAssemblyReference.cache
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\两数相加2-AddTwoNumbers\obj\Debug\两数相加2-AddTwoNumbers.csproj.CoreCompileInputs.cache
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\两数相加2-AddTwoNumbers\obj\Debug\两数相加2-AddTwoNumbers.exe
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\两数相加2-AddTwoNumbers\obj\Debug\两数相加2-AddTwoNumbers.pdb

@@ -15,7 +15,7 @@ namespace 子集78_Subsets
             //for(int i = 0; i < nums.Length; i++) {
             //    OutList.Add(nums[i]);
             //}
-            if (nums.Length == null) {
+            if (nums.Length == 0) {
                 return OutList;
             }
             foreach (int i in nums) {
@@ -24,20 +24,20 @@ namespace 子集78_Subsets
             return OutList;
         }
 
-        public List<List<int>> subsets(int[] nums) {
-            List<List<int>> results = new ArrayList<>();
-            results.add(new ArrayList<>());
+        //public List<List<int>> subsets(int[] nums) {
+        //    List<List<int>> results = new ArrayList<>();
+        //    results.add(new ArrayList<>());
 
-            for (int i = 0; i < nums.length; i++) {
-                List<List<int>> plusNumbers = new ArrayList<>();
-                for (List<int> result : results) {
-                    List<int> newNumber = new ArrayList<>(result);
-                    newNumber.add(nums[i]);
-                    plusNumbers.add(newNumber);
-                } results.addAll(plusNumbers);
-            }
-            return results;
-        }
+        //    for (int i = 0; i < nums.length; i++) {
+        //        List<List<int>> plusNumbers = new ArrayList<>();
+        //        for (List<int> result : results) {
+        //            List<int> newNumber = new ArrayList<>(result);
+        //            newNumber.add(nums[i]);
+        //            plusNumbers.add(newNumber);
+        //        } results.addAll(plusNumbers);
+        //    }
+        //    return results;
+        //}
     }
 
     class Program
