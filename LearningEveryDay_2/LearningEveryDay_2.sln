@@ -3,25 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1,求交集LookingArrayIntersections", "LearningEveryDay_2\1,求交集LookingArrayIntersections.csproj", "{FD7A858A-0F46-4078-B007-9447DC47E151}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1，求交集-349", "LearningEveryDay_2\1，求交集-349.csproj", "{FD7A858A-0F46-4078-B007-9447DC47E151}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1,快乐数HappyNumber", "HappyNumber\1,快乐数HappyNumber.csproj", "{A265008D-C2A7-4148-9211-B2C18C3B4B1A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1，快乐数-202", "HappyNumber\1，快乐数-202.csproj", "{A265008D-C2A7-4148-9211-B2C18C3B4B1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1,宝石与石头GemsAndStones", "GemsAndStones\1,宝石与石头GemsAndStones.csproj", "{BBBADCC4-82F2-4885-8DB7-8C8A2CA10540}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1，宝石与石头-771", "GemsAndStones\1，宝石与石头-771.csproj", "{BBBADCC4-82F2-4885-8DB7-8C8A2CA10540}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1,两数之和1-TwoSum", "TwoSum\1,两数之和1-TwoSum.csproj", "{6981DACB-F492-4673-ABFF-2CCFF30139B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1，两数之和-1", "TwoSum\1，两数之和-1.csproj", "{6981DACB-F492-4673-ABFF-2CCFF30139B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1,大小写转换709-CaseConversion", "CaseConversion\1,大小写转换709-CaseConversion.csproj", "{D4463DE3-747C-4ABD-8B77-4D8E36CDA935}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1，大小写转换-709", "CaseConversion\1，大小写转换-709.csproj", "{D4463DE3-747C-4ABD-8B77-4D8E36CDA935}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2,链表删除237-ListDelete", "链表删除ListDelete\2,链表删除237-ListDelete.csproj", "{484B4BE4-483B-481B-AB52-5188055EDF6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2，链表删除-237", "链表删除ListDelete\2，链表删除-237.csproj", "{484B4BE4-483B-481B-AB52-5188055EDF6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2,删除外层括号", "删除外层括号\2,删除外层括号.csproj", "{2C0CF1AE-58F6-40BE-B190-94CAA05CFDBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2，删除外层括号-1021", "删除外层括号\2，删除外层括号-1021.csproj", "{2C0CF1AE-58F6-40BE-B190-94CAA05CFDBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2,最大二叉树654题", "最大二叉树654题\2,最大二叉树654题.csproj", "{5A7A8F06-7E4F-455E-94AB-73FD34F69F28}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2，最大二叉树-654", "最大二叉树654题\2，最大二叉树-654.csproj", "{5A7A8F06-7E4F-455E-94AB-73FD34F69F28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2,子集78-Subsets", "子集78-Subsets\2,子集78-Subsets.csproj", "{9DD1CD1C-A888-4117-8304-86E850BD2F56}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2，子集-78", "子集78-Subsets\2，子集-78.csproj", "{9DD1CD1C-A888-4117-8304-86E850BD2F56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "两数相加2-AddTwoNumbers", "两数相加2-AddTwoNumbers\两数相加2-AddTwoNumbers.csproj", "{ED574E3A-3F95-444B-9237-8AA8F1BD7E4C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2，两数相加-2", "两数相加2-AddTwoNumbers\2，两数相加-2.csproj", "{ED574E3A-3F95-444B-9237-8AA8F1BD7E4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2，有序数组的平方-977", "2有序数组的平方977\2，有序数组的平方-977.csproj", "{3BE5F96E-542D-47BD-AB8F-0F679816774F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2，两个有序数组的中位数-4", "2，两个有序数组的中位数\2，两个有序数组的中位数-4.csproj", "{5CA2DC9D-54BB-4F6D-90AD-56C2C3949D97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{ED574E3A-3F95-444B-9237-8AA8F1BD7E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED574E3A-3F95-444B-9237-8AA8F1BD7E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED574E3A-3F95-444B-9237-8AA8F1BD7E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BE5F96E-542D-47BD-AB8F-0F679816774F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BE5F96E-542D-47BD-AB8F-0F679816774F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BE5F96E-542D-47BD-AB8F-0F679816774F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BE5F96E-542D-47BD-AB8F-0F679816774F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CA2DC9D-54BB-4F6D-90AD-56C2C3949D97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CA2DC9D-54BB-4F6D-90AD-56C2C3949D97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CA2DC9D-54BB-4F6D-90AD-56C2C3949D97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CA2DC9D-54BB-4F6D-90AD-56C2C3949D97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

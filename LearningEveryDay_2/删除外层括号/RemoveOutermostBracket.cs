@@ -17,7 +17,7 @@ namespace 删除外层括号
 
     //输入："()()"
     //输出：""
-    class RemoveOutermostBracket
+    class Solution
     {
         public List<char> RemoveBracket(string input)
         {
@@ -96,7 +96,7 @@ namespace 删除外层括号
         //}
 
     }
-    class Program
+    class RemoveOutermostBracket
     {
         static void Main(string[] args)
         {
@@ -118,7 +118,7 @@ namespace 删除外层括号
             //    icount--;
             //}
             List<char> outPutList = new List<char>();
-            RemoveOutermostBracket ff = new RemoveOutermostBracket();
+            Solution ff = new Solution();
 
             string input = "(()())";
             Console.WriteLine("output");
