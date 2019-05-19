@@ -1,0 +1,7 @@
+C:\Users\biantai\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2有序数组的平方977\bin\Debug\2有序数组的平方977.exe.config
+C:\Users\biantai\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2有序数组的平方977\bin\Debug\2有序数组的平方977.exe
+C:\Users\biantai\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2有序数组的平方977\bin\Debug\2有序数组的平方977.pdb
+C:\Users\biantai\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2有序数组的平方977\obj\Debug\2，有序数组的平方-977.csproj.CoreCompileInputs.cache
+C:\Users\biantai\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2有序数组的平方977\obj\Debug\2有序数组的平方977.exe
+C:\Users\biantai\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2有序数组的平方977\obj\Debug\2有序数组的平方977.pdb
+C:\Users\biantai\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2有序数组的平方977\obj\Debug\2，有序数组的平方-977.csprojAssemblyReference.cache

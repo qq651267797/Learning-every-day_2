@@ -1,0 +1,6 @@
+C:\Users\biantai\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2，两个有序数组的中位数\bin\Debug\2，两个有序数组的中位数.exe.config
+C:\Users\biantai\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2，两个有序数组的中位数\bin\Debug\2，两个有序数组的中位数.exe
+C:\Users\biantai\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2，两个有序数组的中位数\bin\Debug\2，两个有序数组的中位数.pdb
+C:\Users\biantai\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2，两个有序数组的中位数\obj\Debug\2，两个有序数组的中位数-4.csproj.CoreCompileInputs.cache
+C:\Users\biantai\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2，两个有序数组的中位数\obj\Debug\2，两个有序数组的中位数.exe
+C:\Users\biantai\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2，两个有序数组的中位数\obj\Debug\2，两个有序数组的中位数.pdb
