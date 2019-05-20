@@ -4,3 +4,10 @@ C:\Users\biantai\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2，�
 C:\Users\biantai\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2，两个有序数组的中位数\obj\Debug\2，两个有序数组的中位数-4.csproj.CoreCompileInputs.cache
 C:\Users\biantai\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2，两个有序数组的中位数\obj\Debug\2，两个有序数组的中位数.exe
 C:\Users\biantai\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2，两个有序数组的中位数\obj\Debug\2，两个有序数组的中位数.pdb
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2，两个有序数组的中位数\bin\Debug\2，两个有序数组的中位数.exe.config
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2，两个有序数组的中位数\bin\Debug\2，两个有序数组的中位数.exe
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2，两个有序数组的中位数\bin\Debug\2，两个有序数组的中位数.pdb
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2，两个有序数组的中位数\obj\Debug\2，两个有序数组的中位数-4.csprojAssemblyReference.cache
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2，两个有序数组的中位数\obj\Debug\2，两个有序数组的中位数-4.csproj.CoreCompileInputs.cache
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2，两个有序数组的中位数\obj\Debug\2，两个有序数组的中位数.exe
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\2，两个有序数组的中位数\obj\Debug\2，两个有序数组的中位数.pdb

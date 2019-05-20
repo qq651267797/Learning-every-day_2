@@ -16,16 +16,37 @@ namespace _2_两个有序数组的中位数
 
     class Solution
     {
-        public void FindMedianSortedArrays(List<int> nums1, List<int> nums2)
+        public double FindMedianSortedArrays(List<int> nums1, List<int> nums2)
         {
+            double OutPut = 0;
             foreach(int i in nums2) {
                 nums1.Add(i);
             }
-            int nums1Length = nums1.Count;
-            nums1Length--;
+            this.InsertSort(nums1);
+            if (nums1.Count == 0 || nums1.Count == 1) {
+                throw new Exception();
+            }
+            int nums1Count = nums1.Count;
+            if (nums1Count % 2 == 1) {
+                int temp = nums1Count / 2;
+                OutPut = nums1[temp];
+                //OutPut = curr;
+                return OutPut;
+            }
+            else {
+                int temp = nums1Count / 2;
+                double curr_1 = nums1[temp] * 1.0;
+                double curr_2 = nums1[temp - 1] * 1.0;
 
-
+                OutPut = (curr_1 + curr_2) / 2;
+                return OutPut;
+            }
+            throw new Exception();
         }
+        /// <summary>
+        /// 插入排序
+        /// </summary>
+        /// <param name="inPutList"></param>
         private void InsertSort(List<int> inPutList)
         {
             for (int i = 0; i < inPutList.Count; i++) {
@@ -52,9 +73,20 @@ namespace _2_两个有序数组的中位数
             inputTwo.Add(2);
 
             Solution ff = new Solution();
-            ff.FindMedianSortedArrays(inputOne, inputTwo);
-            Console.ReadKey();
+            double OutPut = ff.FindMedianSortedArrays(inputOne, inputTwo);
+            Console.Write(OutPut);
+            Console.WriteLine();
 
+            inputOne.Clear();
+            inputTwo.Clear();
+            inputOne.Add(1);
+            inputOne.Add(2);
+            inputTwo.Add(3);
+            inputTwo.Add(4);
+            OutPut = ff.FindMedianSortedArrays(inputOne, inputTwo);
+            Console.Write(OutPut);
+
+            Console.ReadKey();
         }
     }
 }

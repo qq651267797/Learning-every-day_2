@@ -88,7 +88,7 @@ namespace BasicGrammar_namespace
         }
     }
     class BasicGrammar
-    { 
+    {
 
         static void Main(string[] args)
         {
@@ -241,25 +241,47 @@ namespace BasicGrammar_namespace
             //tooool ff = new tooool();
             //ff.temp();
 
-            char x = '\0';
-            Console.WriteLine("X=" + x + "de");
-            x = ' ';
+            //char x = '\0';
+            //Console.WriteLine("X=" + x + "de");
+            //x = ' ';
 
-            tooool ff = new tooool();
-            int[] Arr1 = { 3, 1, 2, 4, 6 };
-            int[] Arr2 = { 3, 1, 2, 4, 6 };
-            ff.BubbleSort(Arr1);
-            foreach(int o in Arr1) {
-                Console.Write(o);
-            }
+            ///排序算法
+            //tooool ff = new tooool();
+            //int[] Arr1 = { 3, 1, 2, 4, 6 };
+            //int[] Arr2 = { 3, 1, 2, 4, 6 };
+            //ff.BubbleSort(Arr1);
+            //foreach(int o in Arr1) {
+            //    Console.Write(o);
+            //}
 
-            Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+            //Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+            //ff.BubbleSort2(Arr2);
+            //foreach (int o in Arr2) {
+            //    Console.Write(o);
+            //}
 
-            ff.BubbleSort2(Arr2);
-            foreach (int o in Arr2) {
-                Console.Write(o);
-            }
+            //除法
+            //double num = 0;
+            //num = Math.Round(3 / (2*1.0), 2);
+            //Console.Write(num);
 
+            //空格消除
+            //string one = "               1";
+            ////one = one.Trim();
+            //one = one.Replace(" ", "");
+            //Console.WriteLine(one);
+            string S = "abcabcbb";
+            int[] Arr = new int[128];
+            int j = 0;
+
+            //for (int i = 0; i < S.Length; i++) {
+            //    j = Math.Max(Arr[S[i]], j);
+            //    Arr[S[i]] = i + 1;
+            //    Console.WriteLine(Arr[S[i]]);
+            //}
+            string s = "bbbb";
+            int i = s[0];
+            Console.WriteLine(i);
             Console.ReadKey();
         }
     }

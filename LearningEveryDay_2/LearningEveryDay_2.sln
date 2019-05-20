@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2，有序数组的平方-9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2，两个有序数组的中位数-4", "2，两个有序数组的中位数\2，两个有序数组的中位数-4.csproj", "{5CA2DC9D-54BB-4F6D-90AD-56C2C3949D97}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2，无重复字符的最长子串", "2，无重复字符的最长子串\2，无重复字符的最长子串.csproj", "{2AC3A8B4-999C-48BF-8421-15C9F00A5A0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{5CA2DC9D-54BB-4F6D-90AD-56C2C3949D97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CA2DC9D-54BB-4F6D-90AD-56C2C3949D97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CA2DC9D-54BB-4F6D-90AD-56C2C3949D97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AC3A8B4-999C-48BF-8421-15C9F00A5A0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC3A8B4-999C-48BF-8421-15C9F00A5A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC3A8B4-999C-48BF-8421-15C9F00A5A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC3A8B4-999C-48BF-8421-15C9F00A5A0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
