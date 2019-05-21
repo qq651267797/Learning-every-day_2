@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace _2_无重复字符的最长子串
 {
+//看的  是网上的代码 
+
 
 //给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
 //示例 1:
@@ -24,67 +26,48 @@ namespace _2_无重复字符的最长子串
 
     public class Solution
     {
-        public int LengthOfLongestSubstring(string s)
-        {
-            int length = 0;
-            Dictionary<char, int> dic = new Dictionary<char, int>();
-            int point1 = 0, point2 = 0;
-            while (point2 < s.Length) {
-
-                if (dic.ContainsKey(s[point2])) {
-                    if (dic[s[point2]] + 1 > point1) {
-                        point1 = dic[s[point2]] + 1;
-                    }
-                    else {
-                        point1 = point1;
-                    }
-                    //point1 = dic[s[point2]] + 1 > point1 ? dic[s[point2]] + 1 : point1;
-                    dic[s[point2]] = point2;
-                }
-
-                else {
-                    dic.Add(s[point2], point2);
-                }
-                if (length > point2 - point1 + 1) {
-                    length = length;
-                }
-                else {
-                    length = point2 - point1 + 1;
-                }
-                point2++;
-            }
-            return length;
-        }
-
         public int LengthOfLongestSubstring2(string input)
         {
-            //input.Trim();
+            //input.Trim(); 空格也算字符
             if (input == null || input.Length == 0) {
                 return 0;
             }
             if (input.Length == 1) {
                 return 1;
             }
+            //key 不可以那啥重复
+            Dictionary<char, int> dic = new Dictionary<char, int>();
             int OutLength = 0;
-            int tempLength = 0;
-            return 0;
-        }
-
-        public int LengthOfLongestSubstring3(string s)
-        {
-            int OutLength = 0;
-            int[] array = new int[128];
-            for (int i = 0, j = 0; i < s.Length; i++) {
-
-                j = Math.Max(array[s[i]], j);
-
-                OutLength = Math.Max(OutLength, i - j + 1);
-
-                array[s[i]] = i + 1;
+            int First = 0;
+            int ENDs = 0;
+            for (; ENDs < input.Length; ENDs++) {
+                char temp = input[ENDs];
+                if (dic.ContainsKey(temp)) {
+                    First = Math.Max(dic[temp] + 1, First);
+                    dic[temp] = ENDs + 1;
+                }
+                else {
+                    dic.Add(temp, ENDs);
+                }
+                OutLength = Math.Max(OutLength, ENDs - First + 1);
             }
             return OutLength;
         }
 
+        //public int LengthOfLongestSubstring3(string s)
+        //{
+        //    int OutLength = 0;
+        //    int[] array = new int[128];
+        //    for (int i = 0, j = 0; i < s.Length; i++) {
+
+        //        j = Math.Max(array[s[i]], j);
+
+        //        OutLength = Math.Max(OutLength, i - j + 1);
+
+        //        array[s[i]] = i + 1;
+        //    }
+        //    return OutLength;
+        //}
 
     }
     class LengthOfLongestSubstring
@@ -93,18 +76,18 @@ namespace _2_无重复字符的最长子串
         {
             Solution ff = new Solution();
 
-            string input = "abcabcbb";
-            int OutLength = ff.LengthOfLongestSubstring3(input);
+            string input = " abcdefghj"; //10
+            int OutLength = ff.LengthOfLongestSubstring2(input);
             Console.Write(OutLength);
             Console.WriteLine("               ");
 
-            input = "bbbb";
-            OutLength = ff.LengthOfLongestSubstring3(input);
+            input = "bbbbbbbbbbbb";
+            OutLength = ff.LengthOfLongestSubstring2(input);
             Console.Write(OutLength);
             Console.WriteLine("               ");
 
             input = "pwwkew";
-            OutLength = ff.LengthOfLongestSubstring3(input);
+            OutLength = ff.LengthOfLongestSubstring2(input);
             Console.Write(OutLength);
             Console.WriteLine("               ");
 

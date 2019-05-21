@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace 删除外层括号
 {
-    //有看百度的的代码！！！！！！！
-
     //1021，删除最外层的括号
     //输入："(()())(())"
     //输出："()()()"
@@ -32,7 +30,6 @@ namespace 删除外层括号
                 //OutList = 0; 将input赋值，也没有用，会报错溢出
             }
             char space = ' ';
-            string OutPut = "";
             int num = 0;
 
             for(int i = 0; i < OutList.Count; i++) {

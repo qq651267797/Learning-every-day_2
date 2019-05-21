@@ -19,8 +19,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2，删除外层括号-1021
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2，最大二叉树-654", "最大二叉树654题\2，最大二叉树-654.csproj", "{5A7A8F06-7E4F-455E-94AB-73FD34F69F28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2，子集-78", "子集78-Subsets\2，子集-78.csproj", "{9DD1CD1C-A888-4117-8304-86E850BD2F56}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2，两数相加-2", "两数相加2-AddTwoNumbers\2，两数相加-2.csproj", "{ED574E3A-3F95-444B-9237-8AA8F1BD7E4C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2，有序数组的平方-977", "2有序数组的平方977\2，有序数组的平方-977.csproj", "{3BE5F96E-542D-47BD-AB8F-0F679816774F}"
@@ -28,6 +26,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2，两个有序数组的中位数-4", "2，两个有序数组的中位数\2，两个有序数组的中位数-4.csproj", "{5CA2DC9D-54BB-4F6D-90AD-56C2C3949D97}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2，无重复字符的最长子串", "2，无重复字符的最长子串\2，无重复字符的最长子串.csproj", "{2AC3A8B4-999C-48BF-8421-15C9F00A5A0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2，最长的回文子串 -5", "5，最长的回文子串\2，最长的回文子串 -5.csproj", "{E28DDD76-4F26-453A-A54F-04A64B7DA349}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,10 +67,6 @@ Global
 		{5A7A8F06-7E4F-455E-94AB-73FD34F69F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A7A8F06-7E4F-455E-94AB-73FD34F69F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A7A8F06-7E4F-455E-94AB-73FD34F69F28}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9DD1CD1C-A888-4117-8304-86E850BD2F56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9DD1CD1C-A888-4117-8304-86E850BD2F56}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9DD1CD1C-A888-4117-8304-86E850BD2F56}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9DD1CD1C-A888-4117-8304-86E850BD2F56}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ED574E3A-3F95-444B-9237-8AA8F1BD7E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ED574E3A-3F95-444B-9237-8AA8F1BD7E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED574E3A-3F95-444B-9237-8AA8F1BD7E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -87,6 +83,10 @@ Global
 		{2AC3A8B4-999C-48BF-8421-15C9F00A5A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AC3A8B4-999C-48BF-8421-15C9F00A5A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AC3A8B4-999C-48BF-8421-15C9F00A5A0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E28DDD76-4F26-453A-A54F-04A64B7DA349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E28DDD76-4F26-453A-A54F-04A64B7DA349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E28DDD76-4F26-453A-A54F-04A64B7DA349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E28DDD76-4F26-453A-A54F-04A64B7DA349}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

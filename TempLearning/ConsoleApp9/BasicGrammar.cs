@@ -282,6 +282,14 @@ namespace BasicGrammar_namespace
             string s = "bbbb";
             int i = s[0];
             Console.WriteLine(i);
+
+            if (j == 0) {
+                j = 1;
+            }
+            else {
+                j = j;
+            }
+
             Console.ReadKey();
         }
     }

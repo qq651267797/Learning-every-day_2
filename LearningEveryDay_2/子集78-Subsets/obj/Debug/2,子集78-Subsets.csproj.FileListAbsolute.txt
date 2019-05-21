@@ -1,7 +1,0 @@
-D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\子集78-Subsets\bin\Debug\子集78-Subsets.exe.config
-D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\子集78-Subsets\bin\Debug\子集78-Subsets.exe
-D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\子集78-Subsets\bin\Debug\子集78-Subsets.pdb
-D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\子集78-Subsets\obj\Debug\2,子集78-Subsets.csproj.CoreCompileInputs.cache
-D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\子集78-Subsets\obj\Debug\子集78-Subsets.exe
-D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\子集78-Subsets\obj\Debug\子集78-Subsets.pdb
-D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\子集78-Subsets\obj\Debug\2,子集78-Subsets.csprojAssemblyReference.cache
