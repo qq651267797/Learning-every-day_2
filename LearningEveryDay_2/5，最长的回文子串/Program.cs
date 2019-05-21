@@ -31,8 +31,12 @@ namespace _5_最长的回文子串
             for(; End < input.Length; End++) {
                 string temp = input.Substring(Start, End);
                 string tempReverse = string.Join("", temp.Reverse());
-                if()
-
+                if (temp.Equals(tempReverse)) {
+                    outString = temp;
+                }
+                else {
+                    Start++;
+                }
             }
             return outString;
         }
@@ -43,25 +47,26 @@ namespace _5_最长的回文子串
         {
             Solution ff = new Solution();
             string input = "babad";
-            string temp = input.Substring(0, 4);
-            //string outPut = ff.LongestPalindrome(input);
+            //string temp = input.Substring(0, 1);
+            string outPut = ff.LongestPalindrome(input);
 
             //char[] tempArr = temp.ToCharArray();
             //Array.Reverse(tempArr);
             //string outPut = new string(tempArr);
 
-            string outPut = string.Join("", temp.Reverse());
+            //string outPut = string.Join("", temp.Reverse());
 
             //不能如下这个么写。。。是因为Reverse的问题
             //string outPut = Convert.ToString(temp.Reverse());
 
             Console.WriteLine(outPut);
-            Console.WriteLine(temp);
+            //Console.WriteLine(temp);
             Console.WriteLine();
 
-            //input = "cbbd";
-            //outPut = ff.LongestPalindrome(input);
-            //Console.WriteLine(outPut);
+
+            input = "cbbd";
+            outPut = ff.LongestPalindrome(input);
+            Console.WriteLine(outPut);
 
             Console.ReadKey();
         }
