@@ -246,7 +246,7 @@ namespace BasicGrammar_namespace
             //x = ' ';
 
             ///排序算法
-            //tooool ff = new tooool();
+            tooool ff = new tooool();
             //int[] Arr1 = { 3, 1, 2, 4, 6 };
             //int[] Arr2 = { 3, 1, 2, 4, 6 };
             //ff.BubbleSort(Arr1);
@@ -270,26 +270,22 @@ namespace BasicGrammar_namespace
             ////one = one.Trim();
             //one = one.Replace(" ", "");
             //Console.WriteLine(one);
-            string S = "abcabcbb";
-            int[] Arr = new int[128];
-            int j = 0;
+            //string S = "abcabcbb";
+            //int[] Arr = new int[128];
+            //int j = 0;
 
-            //for (int i = 0; i < S.Length; i++) {
-            //    j = Math.Max(Arr[S[i]], j);
-            //    Arr[S[i]] = i + 1;
-            //    Console.WriteLine(Arr[S[i]]);
-            //}
-            string s = "bbbb";
-            int i = s[0];
-            Console.WriteLine(i);
+            ////for (int i = 0; i < S.Length; i++) {
+            ////    j = Math.Max(Arr[S[i]], j);
+            ////    Arr[S[i]] = i + 1;
+            ////    Console.WriteLine(Arr[S[i]]);
+            ////}
+            //string s = "bbbb";
+            //int i = s[0];
+            //Console.WriteLine(i);
 
-            if (j == 0) {
-                j = 1;
-            }
-            else {
-                j = j;
-            }
-
+            int i = 0;
+            int h = i - 1;
+            Console.WriteLine(h);
             Console.ReadKey();
         }
     }
