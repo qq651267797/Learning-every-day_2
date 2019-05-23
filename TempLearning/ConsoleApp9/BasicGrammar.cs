@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApp9;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -219,16 +220,16 @@ namespace BasicGrammar_namespace
             //for(int i = 0; i < s.Length; i++) {
             //    Console.WriteLine("string[ " + i + " ] = " + s[i]);
             //}
-            //string s = "121416";
-            //string ss = "11";
-            //List<char> OutputList = new List<char>();
-            //for(int i = 0; i < s.Length; i++) {
-            //    char temp = s[i];
-            //    char compare = ss[0];
-            //    if (temp==compare) {
-            //        OutputList.Add(compare);
-            //    }
-            //}
+            string s = "121416";
+            string ss = "11";
+            List<char> OutputList = new List<char>();
+            for (int i = 0; i < s.Length; i++) {
+                char temp = s[i];
+                char compare = ss[0];
+                if (temp == compare) {
+                    OutputList.Add(compare);
+                }
+            }
             //foreach(int temp in OutputList) {
             //    Console.Write(temp);    ///49 49 49 
             //    Console.WriteLine();
@@ -283,10 +284,47 @@ namespace BasicGrammar_namespace
             //int i = s[0];
             //Console.WriteLine(i);
 
-            int i = 0;
-            int h = i - 1;
-            Console.WriteLine(h);
+            //int i = 0;
+            //int h = i - 1;
+            //Console.WriteLine(h);     -1
+
+            //int i = 2;
+            //double k = 2.0;
+            ////double one = i / 0;   尝试除以0
+            //double two = k / 0;
+            ////Console.WriteLine(one);
+            //Console.WriteLine(two); // 00 无穷大的符号
+
+            //decimal bigDecimal;
+            //decimal discount;
+            //decimal bigDecimal_discount;
+            //bigDecimal = 19.95M;
+            //discount = 0.15m;
+            //bigDecimal_discount = bigDecimal - discount;
+            //Console.WriteLine("bigDecimal discount :$ " + bigDecimal_discount);
+
+            //如果我们在代码中写一个12.3，编译器会自动认为这个数是个double型。所以如果我们想指定12.3为float类型，
+            //那么你必须在数字后面加上F / f：
+            //float f = 12.3F;
+            //decimal d = 12.30M;
+            //double dd = 10000000000000000000000d;
+            //dd = dd + 1;
+            //Console.WriteLine("{0:G50}", dd);   //10000000000000000000000
+
+            //decimal mm = 10000000000000000000000000000m;
+            //mm += 0.1m;
+            //Console.WriteLine("{0:G50}", mm);
+
+
+
             Console.ReadKey();
         }
+    }
+}
+
+namespace ConsoleApp9
+{
+    class BigDecimal
+    {
     }
 }
