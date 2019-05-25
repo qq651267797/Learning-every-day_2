@@ -83,7 +83,7 @@ namespace 链表删除ListDelete
             }
         }
 
-        public void print()
+        public void Print()
         {
             ListNode printNode = this.Head;
             while (printNode != null) {
@@ -101,12 +101,12 @@ namespace 链表删除ListDelete
             f.ADDDDD(5);
             f.ADDDDD(1);
             f.ADDDDD(9);
-            f.print();
+            f.Print();
             Console.WriteLine();
             //f.Delete(5);
             //f.print();
             f.Delete(4);
-            f.print();
+            f.Print();
             //f.Delete(5);
             //f.print();
             //f.Delete(5);

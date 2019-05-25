@@ -315,8 +315,6 @@ namespace BasicGrammar_namespace
             //mm += 0.1m;
             //Console.WriteLine("{0:G50}", mm);
 
-
-
             Console.ReadKey();
         }
     }

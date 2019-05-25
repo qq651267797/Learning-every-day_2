@@ -60,6 +60,51 @@ namespace _2_两个有序数组的中位数
                 inPutList[j] = temp;
             }
         }
+        public double FindMedianSortedArrays2(List<int> nums1, List<int> nums2)
+        {
+            int First = 0;
+            int Second = 0;
+            int TotalNum = nums1.Count + nums2.Count;
+
+            if (TotalNum % 2 == 0) {
+                First = (nums1.Count + nums2.Count) / 2 - 1;
+                Second = (nums1.Count + nums2.Count) / 2;
+            }
+            else {
+                First = Second = (nums1.Count + nums2.Count) / 2;
+            }
+
+            int indexOne = 0, indexTwo = 0;
+            double sum = 0;
+
+            while (indexOne < nums1.Count && indexTwo < nums2.Count) {
+                if (nums1[indexOne] < nums2[indexTwo]) {
+                    if (indexOne + indexTwo == First || indexOne + indexTwo == Second) {
+                        sum += nums1[indexOne];
+                    }
+                    indexOne++;
+                }
+                else {
+                    if (indexOne + indexTwo == First || indexOne + indexTwo == Second) {
+                        sum += nums2[indexTwo];
+                    }
+                    indexTwo++;
+                }
+            }
+            while (indexOne < nums1.Count) {
+                if (indexOne + indexTwo == First || indexOne + indexTwo == Second) {
+                    sum += nums1[indexOne];
+                }
+                indexOne++;
+            }
+            while (indexTwo < nums2.Count) {
+                if (indexOne + indexTwo == First || indexOne + indexTwo == Second) {
+                    sum += nums2[indexTwo];
+                }
+                indexTwo++;
+            }
+            return First == Second ? sum : sum / 2;
+        }
     }
     class FindMedianSortedArrays
     {
@@ -88,5 +133,6 @@ namespace _2_两个有序数组的中位数
 
             Console.ReadKey();
         }
+
     }
 }
