@@ -220,16 +220,16 @@ namespace BasicGrammar_namespace
             //for(int i = 0; i < s.Length; i++) {
             //    Console.WriteLine("string[ " + i + " ] = " + s[i]);
             //}
-            string s = "121416";
-            string ss = "11";
-            List<char> OutputList = new List<char>();
-            for (int i = 0; i < s.Length; i++) {
-                char temp = s[i];
-                char compare = ss[0];
-                if (temp == compare) {
-                    OutputList.Add(compare);
-                }
-            }
+            //string s = "121416";
+            //string ss = "11";
+            //List<char> OutputList = new List<char>();
+            //for (int i = 0; i < s.Length; i++) {
+            //    char temp = s[i];
+            //    char compare = ss[0];
+            //    if (temp == compare) {
+            //        OutputList.Add(compare);
+            //    }
+            //}
             //foreach(int temp in OutputList) {
             //    Console.Write(temp);    ///49 49 49 
             //    Console.WriteLine();
@@ -247,7 +247,7 @@ namespace BasicGrammar_namespace
             //x = ' ';
 
             ///排序算法
-            tooool ff = new tooool();
+            //tooool ff = new tooool();
             //int[] Arr1 = { 3, 1, 2, 4, 6 };
             //int[] Arr2 = { 3, 1, 2, 4, 6 };
             //ff.BubbleSort(Arr1);
@@ -314,6 +314,12 @@ namespace BasicGrammar_namespace
             //decimal mm = 10000000000000000000000000000m;
             //mm += 0.1m;
             //Console.WriteLine("{0:G50}", mm);
+
+            int a = 60;
+            int c = ~a;
+            Console.WriteLine(c);
+
+
 
             Console.ReadKey();
         }
