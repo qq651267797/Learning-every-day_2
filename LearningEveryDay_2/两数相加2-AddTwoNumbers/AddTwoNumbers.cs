@@ -15,6 +15,17 @@ namespace 两数相加2_AddTwoNumbers
     //原因：342 + 465 = 807
     public class Solution
     {
+        public List<int> AddTwoNumbers2(List<int> intFirstList, List<int> intSecondList)
+        {
+            List<int> OutPutList = new List<int>();
+
+            int Zero = 0;
+            while (intFirstList != null && intSecondList != null) {
+                sum = intFirstList[]
+            }
+
+            return OutPutList;
+        }
         public List<int> AddTwoNumbers(List<int> intFirstList, List<int> intSecondList)
         {
             List<int> OutPutList = new List<int>();
