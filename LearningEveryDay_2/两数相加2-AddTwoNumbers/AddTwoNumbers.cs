@@ -13,18 +13,35 @@ namespace 两数相加2_AddTwoNumbers
     //输入：(2 -> 4 -> 3) + (5 -> 6 -> 4)
     //输出：7 -> 0 -> 8
     //原因：342 + 465 = 807
+    public class ListNode
+    {
+        public int Data;
+        public ListNode NextNode;
+        public ListNode(int x) { this.Data = x; }
+        public ListNode()
+        {
+
+        }
+    }
     public class Solution
     {
-        public List<int> AddTwoNumbers2(List<int> intFirstList, List<int> intSecondList)
+        public ListNode AddTwoNumbers2(ListNode intFirstList, ListNode intSecondList)
         {
-            List<int> OutPutList = new List<int>();
+            ListNode OutPutIntList = new ListNode();
+            
 
-            int Zero = 0;
-            while (intFirstList != null && intSecondList != null) {
-                sum = intFirstList[]
+            int Carry = 0;  //进位
+            while (intFirstList != null && intSecondList != null || Carry != 0) {
+                int Sum = (intFirstList == null ? 0 : intFirstList.Data) + (intSecondList == null ? 0 : intSecondList.Data) + Carry;
+                Carry = Sum / 10;
+
+                OutPutIntList.Data = Sum % 10;
             }
+                OutPutIntList[index] = intFirstList[index] + intSecondList[index] + Carry;
 
-            return OutPutList;
+                Carry = OutPutIntList[index] / 10;
+                OutPutIntList[index] = OutPutIntList[index] % 10;
+                index++;
         }
         public List<int> AddTwoNumbers(List<int> intFirstList, List<int> intSecondList)
         {
