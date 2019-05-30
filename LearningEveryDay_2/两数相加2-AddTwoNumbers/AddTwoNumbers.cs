@@ -25,24 +25,38 @@ namespace 两数相加2_AddTwoNumbers
     }
     public class Solution
     {
-        public ListNode AddTwoNumbers2(ListNode intFirstList, ListNode intSecondList)
+        public List<int> AddTwoNumbers3(List<int> intFirstList, List<int> intSecondList)
         {
-            ListNode OutPutIntList = new ListNode();
-            
+            int MaxLengthInputList = Math.Max(intFirstList.Count, intSecondList.Count) + 1;
 
-            int Carry = 0;  //进位
-            while (intFirstList != null && intSecondList != null || Carry != 0) {
-                int Sum = (intFirstList == null ? 0 : intFirstList.Data) + (intSecondList == null ? 0 : intSecondList.Data) + Carry;
-                Carry = Sum / 10;
-
-                OutPutIntList.Data = Sum % 10;
+            List<int> OutPutList = new List<int>(MaxLengthInputList);
+            int Carry = 0;  //进位 
+            int Index = 0;
+            while (intFirstList.Count > Index && intSecondList.Count > Index) {
+                int SumOne = intFirstList[Index] + intSecondList[Index] + Carry;
+                Carry = SumOne / 10;
+                OutPutList.Add(SumOne % 10);
+                Index++;
             }
-                OutPutIntList[index] = intFirstList[index] + intSecondList[index] + Carry;
-
-                Carry = OutPutIntList[index] / 10;
-                OutPutIntList[index] = OutPutIntList[index] % 10;
-                index++;
+            while (intFirstList.Count > Index) {
+                int SumTow = intFirstList[Index] + Carry;
+                Carry = SumTow / 10;
+                OutPutList.Add(SumTow % 10);
+                Index++;
+            }
+            while (intSecondList.Count > Index) {
+                int SumThree = intSecondList[Index] + Carry;
+                Carry = SumThree / 10;
+                OutPutList.Add(SumThree % 10);
+                Index++;
+            }
+            if (Carry != 0) {
+                Index++;
+                OutPutList.Add(Carry);
+            }
+            return OutPutList;
         }
+
         public List<int> AddTwoNumbers(List<int> intFirstList, List<int> intSecondList)
         {
             List<int> OutPutList = new List<int>();
@@ -74,15 +88,15 @@ namespace 两数相加2_AddTwoNumbers
             List<int> intFirstList = new List<int>();
             List<int> intSecondList = new List<int>();
             List<int> OutPutList = new List<int>();
-            intFirstList.Add(2);
+            intFirstList.Add(8);
             intFirstList.Add(4);
             intFirstList.Add(3);
             intSecondList.Add(5);
             intSecondList.Add(6);
-            intSecondList.Add(4);
+            intSecondList.Add(7);
 
             Solution ff = new Solution();
-            OutPutList = ff.AddTwoNumbers(intFirstList, intSecondList);
+            OutPutList = ff.AddTwoNumbers3(intFirstList, intSecondList);
 
             foreach (int i in OutPutList) {
                 Console.WriteLine(i);
