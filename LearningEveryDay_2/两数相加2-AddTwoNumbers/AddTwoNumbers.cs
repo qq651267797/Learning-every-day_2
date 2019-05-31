@@ -27,9 +27,8 @@ namespace 两数相加2_AddTwoNumbers
     {
         public List<int> AddTwoNumbers3(List<int> intFirstList, List<int> intSecondList)
         {
-            int MaxLengthInputList = Math.Max(intFirstList.Count, intSecondList.Count) + 1;
 
-            List<int> OutPutList = new List<int>(MaxLengthInputList);
+            List<int> OutPutList = new List<int>();
             int Carry = 0;  //进位 
             int Index = 0;
             while (intFirstList.Count > Index && intSecondList.Count > Index) {

@@ -6,9 +6,6 @@ using System.Threading.Tasks;
 
 namespace _2_无重复字符的最长子串
 {
-//看的  是网上的代码 
-
-
 //给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
 //示例 1:
 //输入: "abcabcbb"
@@ -44,7 +41,7 @@ namespace _2_无重复字符的最长子串
                 char temp = input[ENDs];
                 if (dic.ContainsKey(temp)) {
                     First = Math.Max(dic[temp] + 1, First);
-                    dic[temp] = ENDs + 1;
+                    dic[temp] = ENDs;
                 }
                 else {
                     dic.Add(temp, ENDs);
@@ -76,13 +73,13 @@ namespace _2_无重复字符的最长子串
         {
             Solution ff = new Solution();
 
-            string input = " abcdefghj"; //10
-            int OutLength = ff.LengthOfLongestSubstring2(input);
-            Console.Write(OutLength);
-            Console.WriteLine("               ");
+            //string input = " abcdefghj"; //10
+            //int OutLength = ff.LengthOfLongestSubstring2(input);
+            //Console.Write(OutLength);
+            //Console.WriteLine("               ");
 
-            input = "bbbbbbbbbbbb";
-            OutLength = ff.LengthOfLongestSubstring2(input);
+            string input = "bbabcbbc";
+            int OutLength = ff.LengthOfLongestSubstring2(input);
             Console.Write(OutLength);
             Console.WriteLine("               ");
 
@@ -90,6 +87,13 @@ namespace _2_无重复字符的最长子串
             OutLength = ff.LengthOfLongestSubstring2(input);
             Console.Write(OutLength);
             Console.WriteLine("               ");
+
+            input = "abcabcabc";
+            OutLength = ff.LengthOfLongestSubstring2(input);
+            Console.Write(OutLength);
+            Console.WriteLine("               ");
+
+
 
             Console.ReadKey();
         }
