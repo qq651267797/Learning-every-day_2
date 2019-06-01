@@ -23,27 +23,43 @@ namespace 最大二叉树654题
     //     2  0   
     //       \
     //        1
-    public class ListNode
+    class Tree
     {
+        //节点数据
         public int Data;
-        public ListNode NextNode { get; set; }
-        public ListNode PreviousNode { get; set; }
-
-        public ListNode(int data)
+        //节点高度，需要时常刷新
+        //public int Height;
+        //树形打印用到
+        public string StrData;
+        //左右孩子，以及母节点
+        public Tree LeftChild { get; set; }
+        public Tree RightChild { get; set; }
+        public Tree ParentNode { get; set; }
+        //int的构造
+        public Tree(int item)
         {
-            this.Data = data;
+            this.Data = item;
         }
-        public ListNode()
+        //string的构造
+        public Tree(string free)
         {
-
+            this.StrData = free;
+        }
+        //空构造，最先调用
+        public Tree()
+        {
         }
     }
 
-    class MyLinkList
+    class MyAvlTree
     {
-        public ListNode Head;
-        public ListNode Last;
-
+        //首先将插入的数组找到最大值
+        //
+        public Tree Root;
+        public MyAvlTree()
+        {
+            this.Root = null;
+        }
         public void ConstructMaximumBinaryTree(List<int> Input)
         {
             int InputMax = Input.Max();
@@ -67,54 +83,45 @@ namespace 最大二叉树654题
                 LeftList.Add(Input[i]);
             }
             List<int> RightList = new List<int>();
-            for (int i = IndexMax; i < Input.Count - 1; i++) {
+            for (int i = IndexMax; i < Input.Count; i++) {
                 RightList.Add(Input[i]);
             }
 
+            foreach(int i in LeftList) {
+                Console.WriteLine(i);
+            }
+            foreach (int i in RightList) {
+                Console.WriteLine(i);
+            }
+
         }
 
-
-        private void ADDDDD(int value)
+        private void InsertNode(int item)
         {
-            ListNode LastNode = this.Last;
-            ListNode NewNode = new ListNode() { Data = value };
-
-            if (this.Head == null) {
-                this.Head = NewNode;
-                this.Last = NewNode;
-            }
-            else {
-                NewNode.NextNode = null;
-                NewNode.PreviousNode = LastNode;
-                LastNode.NextNode = NewNode;
-                this.Last = NewNode;
-            }
+            
+            if()
         }
 
-        public void Print()
-        {
-            ListNode printNode = this.Head;
-            while (printNode != null) {
-                Console.Write(printNode.Data + " ,");
-                printNode = printNode.NextNode;
-            }
-        }
+
+
     }
     class ConstructMaximumBinaryTree
     {
         static void Main(string[] args)
         {
             MyLinkList f = new MyLinkList();
-            f.ADDDDD(4);
-            f.ADDDDD(5);
-            f.ADDDDD(1);
-            f.ADDDDD(9);
-            f.Print();
+            //f.ADDDDD(4);
+            //f.ADDDDD(5);
+            //f.ADDDDD(1);
+            ////f.ADDDDD(9);
+            //f.Print();
+            List<int> inPutList = new List<int>() { 4, 3, 1, 9 ,8 };
+
+            f.ConstructMaximumBinaryTree(inPutList);
             Console.WriteLine();
             //f.Delete(5);
             //f.print();
-            f.Delete(4);
-            f.Print();
+            //f.Delete(4);
             //f.Delete(5);
             //f.print();
             //f.Delete(5);
