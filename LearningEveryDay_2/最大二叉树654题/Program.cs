@@ -98,8 +98,8 @@ namespace 最大二叉树654题
 
         private void InsertNode(int item)
         {
-            
-            if()
+            Tree NewNode = new Tree(item);
+            if ()
         }
 
 

@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace _3_两数相除
 {
-    class Program
+    public class Solution
+    {
+        public int Divide(int dividend, int divisor)
+        {
+
+        }
+    }
+    class Divide
     {
         static void Main(string[] args)
         {

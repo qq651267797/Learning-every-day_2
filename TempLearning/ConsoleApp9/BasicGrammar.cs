@@ -131,6 +131,7 @@ namespace BasicGrammar_namespace
             //Console.WriteLine(string.Format("{0:D5}", i));
             //都是输出 "00001"
 
+
             //5，不允许除以0
             //int i = 10;
             //int j = 0;
@@ -315,9 +316,59 @@ namespace BasicGrammar_namespace
             //mm += 0.1m;
             //Console.WriteLine("{0:G50}", mm);
 
+            //位运算
             int a = 60;
-            int c = ~a;
+            int index = 0;
+            int c = (a << index);
+            Console.WriteLine("a右移" + index);
             Console.WriteLine(c);
+            Console.WriteLine();
+
+            index = 1;
+            c = (a << index);
+            Console.WriteLine("a右移" + index);
+            Console.WriteLine(c);
+            Console.WriteLine();
+
+            index = 2;
+            c = (a << index);
+            Console.WriteLine("a右移" + index);
+            Console.WriteLine(c);
+            Console.WriteLine();
+
+            //index = 2;
+            //c = (a << index)-a<<index
+            //Console.WriteLine("a右移" + index);
+            //Console.WriteLine(c);
+            //Console.WriteLine();
+
+            int aa = 0;
+            int qufan = ~aa + 1;
+            Console.WriteLine(qufan);
+            int zaiqufan = ~qufan + 1;
+            Console.WriteLine(zaiqufan);
+
+            int basedata = 2;
+            int mul = 3;
+            int s = 0;
+            int r = 0;
+            while (mul != 0) {
+                s = basedata ^ mul;
+                r = (basedata & mul) << 1;
+                basedata = s;
+                mul = r;
+            }
+            Console.WriteLine(basedata);
+            Console.WriteLine();
+
+            //逻辑与   
+            Console.WriteLine(8 & 9);
+            //逻辑或 结果是9
+            Console.WriteLine(8 | 9);
+            //逻辑非 结果是-86
+            Console.WriteLine(~85);
+            //逻辑异或  结果是1
+            Console.WriteLine(8 ^ 9);
 
 
 
