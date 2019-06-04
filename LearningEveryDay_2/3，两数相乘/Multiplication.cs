@@ -71,9 +71,9 @@ namespace _3_乘法
         {
             Solution ff = new Solution();
             int Base = 2222;
-            int Multiple = 5555;
+            int Multiple = -5555;
+            Console.WriteLine("底数是 " + Base + " 乘以 " + Multiple);
             int OutPutInt = ff.Multiply(Base, Multiple);
-            Console.WriteLine("底数是 " + Base +" 乘以 " + Multiple);
             Console.WriteLine("乘完之后结果为 " + OutPutInt);
             Console.WriteLine();
 
