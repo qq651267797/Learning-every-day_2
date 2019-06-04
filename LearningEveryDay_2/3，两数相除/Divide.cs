@@ -10,7 +10,13 @@ namespace _3_两数相除
     {
         public int Divide(int dividend, int divisor)
         {
-
+            int res = -1;
+            if (dividend < divisor) {
+                return 0;
+            }
+            else {
+                res = Divide()
+            }
         }
     }
     class Divide

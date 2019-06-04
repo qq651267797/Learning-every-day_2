@@ -342,33 +342,76 @@ namespace BasicGrammar_namespace
             //Console.WriteLine(c);
             //Console.WriteLine();
 
-            int aa = 0;
-            int qufan = ~aa + 1;
-            Console.WriteLine(qufan);
-            int zaiqufan = ~qufan + 1;
-            Console.WriteLine(zaiqufan);
 
-            int basedata = 2;
-            int mul = 3;
-            int s = 0;
-            int r = 0;
-            while (mul != 0) {
-                s = basedata ^ mul;
-                r = (basedata & mul) << 1;
-                basedata = s;
-                mul = r;
-            }
-            Console.WriteLine(basedata);
-            Console.WriteLine();
+            //位运算
+            //int aa = 0;
+            //int qufan = ~aa + 1;
+            //Console.WriteLine(qufan);
+            //int zaiqufan = ~qufan + 1;
+            //Console.WriteLine(zaiqufan);
 
-            //逻辑与   
-            Console.WriteLine(8 & 9);
-            //逻辑或 结果是9
-            Console.WriteLine(8 | 9);
-            //逻辑非 结果是-86
-            Console.WriteLine(~85);
-            //逻辑异或  结果是1
-            Console.WriteLine(8 ^ 9);
+            //int basedata = 2;
+            //int mul = 3;
+            //int s = 0;
+            //int r = 0;
+            //while (mul != 0) {
+            //    s = basedata ^ mul;
+            //    r = (basedata & mul) << 1;
+            //    basedata = s;
+            //    mul = r;
+            //}
+            //Console.WriteLine(basedata);
+            //Console.WriteLine();
+
+            ////逻辑与   
+            //Console.WriteLine(8 & 9);
+            ////逻辑或 结果是9
+            //Console.WriteLine(8 | 9);
+            ////逻辑非 结果是-86
+            //Console.WriteLine(~85);
+            ////逻辑异或  结果是1
+            //Console.WriteLine(8 ^ 9);
+
+            //奇偶数
+            //int i = 3;
+            //int j = 4;
+            //if (i % 2 == 1) {
+            //    Console.WriteLine(i + " %%% 是个奇数 ");
+            //}
+            //else {
+            //    Console.WriteLine(i + " 是个偶数 ");
+            //}
+            //if ((i & 1) == 1) {
+            //    Console.WriteLine(i + " &&& 是个奇数 ");
+            //}
+            //else {
+            //    Console.WriteLine(i + " 是个偶数 ");
+            //}
+
+            //if (j % 2 == 1) {
+            //    Console.WriteLine(j + " %%% 是个奇数 ");
+            //}
+            //else {
+            //    Console.WriteLine(j + " 是个偶数 ");
+            //}
+            //if ((j & 1)== 1) {
+            //    Console.WriteLine(j + " &&& 是个奇数 ");
+            //}
+            //else {
+            //    Console.WriteLine(j + " 是个偶数 ");
+            //}
+
+            //交换两个数
+            //两个相同的数异或之后结果会等于 0，即 n ^ n = 0。
+            //并且任何数与 0 异或等于它本身，即 n ^ 0 = n。
+
+            //小数取整
+            //double x = 3.2154544244;
+            //int y = ~~(int)x;
+            //Console.WriteLine(x + "                    ");
+            //Console.WriteLine(y + "                    ");
+            //Console.WriteLine("                    ");
+
 
 
 
