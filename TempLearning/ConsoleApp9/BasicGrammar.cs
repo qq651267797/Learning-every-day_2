@@ -317,24 +317,24 @@ namespace BasicGrammar_namespace
             //Console.WriteLine("{0:G50}", mm);
 
             //位运算
-            int a = 60;
-            int index = 0;
-            int c = (a << index);
-            Console.WriteLine("a右移" + index);
-            Console.WriteLine(c);
-            Console.WriteLine();
+            //int a = 60;
+            //int index = 0;
+            //int c = (a << index);
+            //Console.WriteLine("a右移" + index);
+            //Console.WriteLine(c);
+            //Console.WriteLine();
 
-            index = 1;
-            c = (a << index);
-            Console.WriteLine("a右移" + index);
-            Console.WriteLine(c);
-            Console.WriteLine();
+            //index = 1;
+            //c = (a << index);
+            //Console.WriteLine("a右移" + index);
+            //Console.WriteLine(c);
+            //Console.WriteLine();
 
-            index = 2;
-            c = (a << index);
-            Console.WriteLine("a右移" + index);
-            Console.WriteLine(c);
-            Console.WriteLine();
+            //index = 2;
+            //c = (a << index);
+            //Console.WriteLine("a右移" + index);
+            //Console.WriteLine(c);
+            //Console.WriteLine();
 
             //index = 2;
             //c = (a << index)-a<<index
@@ -368,7 +368,7 @@ namespace BasicGrammar_namespace
             ////逻辑或 结果是9
             //Console.WriteLine(8 | 9);
             ////逻辑非 结果是-86
-            //Console.WriteLine(~85);
+            //Console.WriteLine(~85 + 1);
             ////逻辑异或  结果是1
             //Console.WriteLine(8 ^ 9);
 
@@ -411,18 +411,14 @@ namespace BasicGrammar_namespace
             //Console.WriteLine(x + "                    ");
             //Console.WriteLine(y + "                    ");
             //Console.WriteLine("                    ");
+            //double iii = 2 ^ -1;
+            //double ii = Math.Pow(3, -1);
+            //Console.WriteLine(iii + "                    ");
 
 
 
 
             Console.ReadKey();
         }
-    }
-}
-
-namespace ConsoleApp9
-{
-    class BigDecimal
-    {
     }
 }

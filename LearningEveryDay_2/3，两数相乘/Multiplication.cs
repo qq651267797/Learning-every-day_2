@@ -10,11 +10,27 @@ namespace _3_乘法
     {
         public int Multiply(int BaseData, int MultipleData)
         {
+            //false = "-"     true = "+"
+            // 异或运算取符号
+            //int sign = ((dividend < 0) ^ (divisor < 0)) ? -1 : 1;
+            bool FinalSign = true;
+            if (BaseData > 0 && MultipleData > 0) {
+                FinalSign = true;
+            }
+            else if (BaseData < 0 && MultipleData < 0) {
+                FinalSign = true;
+            }
+            else {
+                FinalSign = false;
+            }
+            BaseData = this.MathAbs(BaseData);
+            MultipleData = this.MathAbs(MultipleData);
+
             int i = 1;
-            int res = 0;
+            int Output = 0;
             while (MultipleData != 0) {
                 if ((MultipleData & 1) == 1) {
-                    res += (BaseData << (i - 1));
+                    Output += (BaseData << (i - 1));
                     MultipleData = MultipleData >> 1;
                     i++;
                 }
@@ -23,7 +39,20 @@ namespace _3_乘法
                     i++;
                 }
             }
-            return res;
+
+            Output = (FinalSign == true ? Output : (~Output + 1));
+            return  Output;
+        }
+        /// <summary>
+        /// 取绝对值
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public int MathAbs(int input)
+        {
+            int temp = input >> 31;
+            temp = (temp == 0 ? input : (~input + 1));
+            return temp;
         }
 
             //int OutputInt = 0;
@@ -70,8 +99,8 @@ namespace _3_乘法
         static void Main(string[] args)
         {
             Solution ff = new Solution();
-            int Base = 2222;
-            int Multiple = -5555;
+            int Base = 9;
+            int Multiple = 9;
             Console.WriteLine("底数是 " + Base + " 乘以 " + Multiple);
             int OutPutInt = ff.Multiply(Base, Multiple);
             Console.WriteLine("乘完之后结果为 " + OutPutInt);

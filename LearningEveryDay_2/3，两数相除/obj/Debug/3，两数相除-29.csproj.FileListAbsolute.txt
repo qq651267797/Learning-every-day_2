@@ -1,0 +1,7 @@
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，两数相除\bin\Debug\3，两数相除.exe.config
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，两数相除\bin\Debug\3，两数相除.exe
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，两数相除\bin\Debug\3，两数相除.pdb
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，两数相除\obj\Debug\3，两数相除-29.csprojAssemblyReference.cache
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，两数相除\obj\Debug\3，两数相除-29.csproj.CoreCompileInputs.cache
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，两数相除\obj\Debug\3，两数相除.exe
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，两数相除\obj\Debug\3，两数相除.pdb
