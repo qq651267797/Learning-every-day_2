@@ -22,7 +22,7 @@ namespace 减法
         {
             Solution ff = new Solution();
             int BaseData = 1;
-            int Subtracted = 5;
+            int Subtracted = 7;
             int OutPutInt = ff.Subtraction(BaseData, Subtracted);
             Console.WriteLine(OutPutInt);
             Console.WriteLine();

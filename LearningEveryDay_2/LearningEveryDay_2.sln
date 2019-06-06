@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3，减法", "两数相减\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3，加法", "两数相加\3，加法.csproj", "{EE8E4360-4552-43ED-B807-73CC2CA3037C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3，Z字型变换-6", "3，Z字型变换-6\3，Z字型变换-6.csproj", "{BD30BEF8-8AE1-40EF-BF96-0F48A5A1B579}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{EE8E4360-4552-43ED-B807-73CC2CA3037C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE8E4360-4552-43ED-B807-73CC2CA3037C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE8E4360-4552-43ED-B807-73CC2CA3037C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD30BEF8-8AE1-40EF-BF96-0F48A5A1B579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD30BEF8-8AE1-40EF-BF96-0F48A5A1B579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD30BEF8-8AE1-40EF-BF96-0F48A5A1B579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD30BEF8-8AE1-40EF-BF96-0F48A5A1B579}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,4 @@
-﻿using ConsoleApp9;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -414,9 +413,12 @@ namespace BasicGrammar_namespace
             //double iii = 2 ^ -1;
             //double ii = Math.Pow(3, -1);
             //Console.WriteLine(iii + "                    ");
+            int i = -2;
 
+            Console.WriteLine(Convert.ToString(i,2));
+             i = 2;
 
-
+            Console.WriteLine(Convert.ToString(i, 2));
 
             Console.ReadKey();
         }

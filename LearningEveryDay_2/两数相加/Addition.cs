@@ -24,7 +24,7 @@ namespace 加法
         static void Main(string[] args)
         {
             Solution ff = new Solution();
-            int OutPut = ff.Addition(5, -3);
+            int OutPut = ff.Addition(5, 3);
             Console.WriteLine(OutPut);
             OutPut = ff.Addition(1, -1);
             Console.WriteLine(OutPut);

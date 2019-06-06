@@ -1,0 +1,7 @@
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，Z字型变换-6\bin\Debug\3，Z字型变换-6.exe.config
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，Z字型变换-6\bin\Debug\3，Z字型变换-6.exe
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，Z字型变换-6\bin\Debug\3，Z字型变换-6.pdb
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，Z字型变换-6\obj\Debug\3，Z字型变换-6.csprojAssemblyReference.cache
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，Z字型变换-6\obj\Debug\3，Z字型变换-6.csproj.CoreCompileInputs.cache
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，Z字型变换-6\obj\Debug\3，Z字型变换-6.exe
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，Z字型变换-6\obj\Debug\3，Z字型变换-6.pdb

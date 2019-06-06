@@ -57,18 +57,20 @@ namespace _3_两数相除
             if (DividendAbs < DivisorAbs) {
                 return Quotient;
             }
-
-            Quotient = 1;   //商数
+            int TempDivisorAbs = DivisorAbs;
             int Remainder = 0;  //余数
-            while(DividendAbs > (DivisorAbs * Quotient)) {
+
+            while (DividendAbs > DivisorAbs) {
                 //如果除数大于被除数
                 //除数 减去 被除数乘以商  的值，，仍大于被除数
                 //认为未除尽，商可以更大
-                if (DividendAbs - DivisorAbs * Quotient >= DivisorAbs) {
+
+                if (DividendAbs - TempDivisorAbs >= TempDivisorAbs) {
+                    DivisorAbs += TempDivisorAbs;
                     Quotient++;
                 }
                 else {
-                    Remainder = DividendAbs - DivisorAbs * Quotient;
+                    Remainder = DividendAbs - DivisorAbs;
                     break;
                 }
             }
@@ -84,6 +86,29 @@ namespace _3_两数相除
             int temp = input >> 31;
             temp = (temp == 0 ? input : (~input + 1));
             return temp;
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Dividend"></param>
+        /// <param name="Divisor"></param>
+        /// <returns></returns>
+        public int Divide2(int Dividend, int Divisor)
+        {
+            int num = 0;
+            int sum = Divisor;
+            while (Dividend >= Divisor) {
+                int Count = 1;
+                while(Dividend >= sum + sum) {
+                    Count += Count;
+                    sum += sum;
+                }
+                Dividend = Dividend - sum;
+                num = num + Count;
+            }
+            return num;
         }
     }
     class Divide
@@ -120,25 +145,25 @@ namespace _3_两数相除
             Console.WriteLine();
 
             i = 50;
-            j = 2;
+            j = 4;
             Quotient = ff.Divide(i, j);
             Console.WriteLine();
             Console.WriteLine(Quotient);
             Console.WriteLine();
 
-            i = int.MaxValue;
-            j = -1;
-            Quotient = ff.Divide(i, j);
-            Console.WriteLine();
-            Console.WriteLine(Quotient);
-            Console.WriteLine();
+            //i = int.MaxValue;
+            //j = -1;
+            //Quotient = ff.Divide(i, j);
+            //Console.WriteLine();
+            //Console.WriteLine(Quotient);
+            //Console.WriteLine();
 
-            i = int.MinValue;
-            j = -1;
-            Quotient = ff.Divide(i, j);
-            Console.WriteLine();
-            Console.WriteLine(Quotient);
-            Console.WriteLine();
+            //i = int.MinValue;
+            //j = -1;
+            //Quotient = ff.Divide(i, j);
+            //Console.WriteLine();
+            //Console.WriteLine(Quotient);
+            //Console.WriteLine();
 
 
 

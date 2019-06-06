@@ -100,7 +100,7 @@ namespace _3_乘法
         {
             Solution ff = new Solution();
             int Base = 9;
-            int Multiple = 9;
+            int Multiple = 11;
             Console.WriteLine("底数是 " + Base + " 乘以 " + Multiple);
             int OutPutInt = ff.Multiply(Base, Multiple);
             Console.WriteLine("乘完之后结果为 " + OutPutInt);

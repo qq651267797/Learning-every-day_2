@@ -26,8 +26,11 @@ namespace _5_最长的回文子串
             if (input.Length == 1) {
                 return input;
             }
+
             int Left = 0;
             int Right = 1;
+            //从中间到两边的检测方法
+            //
             for (int i = 0; i < input.Length; i++) {
                 int tempLeft = i - 1;
                 int tempRight = i + 1;
@@ -41,6 +44,7 @@ namespace _5_最长的回文子串
                     tempRight++;
                 }
             }
+            //从中间到右边的逐步推移法
             for (int i = 0; i < input.Length; i++) {
                 int tempLeft = i;
                 int tempRight = i + 1;
