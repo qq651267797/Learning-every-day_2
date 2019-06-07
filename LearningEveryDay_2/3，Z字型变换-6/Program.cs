@@ -31,37 +31,49 @@ namespace _3_Z字型变换_6
     //T     S G
     public class Solution
     {
-        public List<int> Convert(string input, int Level)
+        public List<char> Convert(string input, int LeveL)
         {
             List<char> OutListChar = new List<char>();
 
-            int Interval = 2 * (Level - 1);
-            //if (Interval > input.Length) {
+            int Interval = 2 * (LeveL - 1);
 
-            //}
+            if (input.Length == 0 || input == null) {
+                Console.WriteLine("input == 空, 输入不合法");
+                return OutListChar;
+            }
+            if (LeveL == 0) {
+                Console.WriteLine("LeveL == 0, 输入不合法");
+                return OutListChar;
+            }
+            if (LeveL == 1) {
+                foreach (char i in input) {
+                    OutListChar.Add(i);
+                }
+                return OutListChar;
+            }
+
             int RowNumber = input.Length / Interval + 1;
-            //当i超出边界时，则退出 0 ~ Level-1
-            for (int i = 0; i < Level; i++) {
+            //当i超出边界时，则退出 0 ~ LeveL-1
+            for (int i = 0; i < LeveL; i++) {
                 //在处于边界时，对边界的最外层进行处理
                 for (int j = 0; j < RowNumber; j++) {
-                    if (i == 0 || i == Level - 1) {
-                        if (Interval * i + j < input.Length) {
-                            OutListChar.Add(input[Interval * i + j]);
-                        }
-                        else {
-                            continue;
+
+                    if (i == 0 || i == LeveL - 1) {
+                        if (Interval * j + i < input.Length) {
+                            OutListChar.Add(input[Interval * j + i]);
                         }
                     }
                     else {
-                        if (Interval * i + j < input.Length) {
-                            OutListChar.Add(input[Interval * i + j]);
+                        if (Interval * j + i < input.Length) {
+                            OutListChar.Add(input[Interval * j + i]);
                         }
-
+                        if (Interval * j + i + (LeveL - 1 - i) * 2 < input.Length) {
+                            OutListChar.Add(input[Interval * j + i + (LeveL - 1 - i) * 2]);
+                        }
                     }
                 }
-
             }
-
+            return OutListChar;
         }
     }
 
@@ -70,13 +82,13 @@ namespace _3_Z字型变换_6
         static void Main(string[] args)
         {
             Solution ff = new Solution();
-            List<int> OutListInt = new List<int>();
-            string InputString = "ABCDEFGHIJK";
-            int Level = 3;
+            List<char> OutListInt = new List<char>();
+            string InputString = "ABCDEFGH";
+            int Level = 0;
             OutListInt = ff.Convert(InputString, Level);
 
-            foreach(int i in OutListInt) {
-                Console.WriteLine(i);
+            foreach(char i in OutListInt) {
+                Console.Write(i);
             }
             Console.WriteLine();
             Console.ReadKey();

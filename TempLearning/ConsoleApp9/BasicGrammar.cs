@@ -413,13 +413,18 @@ namespace BasicGrammar_namespace
             //double iii = 2 ^ -1;
             //double ii = Math.Pow(3, -1);
             //Console.WriteLine(iii + "                    ");
-            int i = -2;
 
-            Console.WriteLine(Convert.ToString(i,2));
-             i = 2;
 
-            Console.WriteLine(Convert.ToString(i, 2));
+            List<char> FirstListChar = new List<char>();
+            string str = "ABCDEFGHIJ";
+            foreach(char i in str) {
+                FirstListChar.Add(i);
+            }
 
+            foreach(char i in FirstListChar) {
+                Console.Write(i);
+                Console.WriteLine();
+            }
             Console.ReadKey();
         }
     }

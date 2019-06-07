@@ -20,6 +20,11 @@ namespace _3_两数相除
 //输出: -2
     public class Solution
     {
+        //自己的
+        //自己的
+        //自己的
+        //自己的
+        //自己的
         public int Divide(int Dividend, int Divisor)
         {
             if (Divisor == 0) {
@@ -89,6 +94,10 @@ namespace _3_两数相除
         }
 
 
+        //百度看的
+        //百度看的
+        //百度看的
+        //百度看的
         /// <summary>
         /// 
         /// </summary>
