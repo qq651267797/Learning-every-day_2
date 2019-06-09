@@ -44,6 +44,7 @@ namespace _2_两个有序数组的中位数
             int Nums1Index = 0;
             int Nums2Index = 0;
             int TempIndex = 0;
+
             while (Nums1Index < nums1.Length && Nums2Index < nums2.Length) {
                 if (nums1[Nums1Index] <= nums2[Nums2Index]) {
                     MergerArray[TempIndex] = nums1[Nums1Index];
@@ -56,11 +57,13 @@ namespace _2_两个有序数组的中位数
                     Nums2Index++;
                 }
             }
+
             while (Nums1Index < nums1.Length) {
                 MergerArray[TempIndex] = nums1[Nums1Index];
                 TempIndex++;
                 Nums1Index++;
             }
+
             while (Nums2Index < nums2.Length) {
                 MergerArray[TempIndex] = nums2[Nums2Index];
                 TempIndex++;

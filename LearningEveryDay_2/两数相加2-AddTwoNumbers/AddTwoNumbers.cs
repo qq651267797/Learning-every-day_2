@@ -13,18 +13,10 @@ namespace 两数相加2_AddTwoNumbers
     //输入：(2 -> 4 -> 3) + (5 -> 6 -> 4)
     //输出：7 -> 0 -> 8
     //原因：342 + 465 = 807
-    public class ListNode
-    {
-        public int Data;
-        public ListNode NextNode;
-        public ListNode(int x) { this.Data = x; }
-        public ListNode()
-        {
 
-        }
-    }
     public class Solution
     {
+        //修改后de 
         public List<int> AddTwoNumbers3(List<int> intFirstList, List<int> intSecondList)
         {
 
@@ -56,6 +48,7 @@ namespace 两数相加2_AddTwoNumbers
             return OutPutList;
         }
 
+        //以前的
         public List<int> AddTwoNumbers(List<int> intFirstList, List<int> intSecondList)
         {
             List<int> OutPutList = new List<int>();

@@ -35,8 +35,6 @@ namespace _3_Z字型变换_6
         {
             List<char> OutListChar = new List<char>();
 
-            int Interval = 2 * (LeveL - 1);
-
             if (input.Length == 0 || input == null) {
                 Console.WriteLine("input == 空, 输入不合法");
                 return OutListChar;
@@ -52,6 +50,9 @@ namespace _3_Z字型变换_6
                 return OutListChar;
             }
 
+            //第一列 的间隔需要多少
+            int Interval = 2 * (LeveL - 1);
+            //是否可以支撑那么多行 
             int RowNumber = input.Length / Interval + 1;
             //当i超出边界时，则退出 0 ~ LeveL-1
             for (int i = 0; i < LeveL; i++) {

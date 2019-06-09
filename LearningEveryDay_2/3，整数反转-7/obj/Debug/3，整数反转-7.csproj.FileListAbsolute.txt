@@ -1,0 +1,7 @@
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，整数反转-7\bin\Debug\3，整数反转-7.exe.config
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，整数反转-7\bin\Debug\3，整数反转-7.exe
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，整数反转-7\bin\Debug\3，整数反转-7.pdb
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，整数反转-7\obj\Debug\3，整数反转-7.csprojAssemblyReference.cache
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，整数反转-7\obj\Debug\3，整数反转-7.csproj.CoreCompileInputs.cache
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，整数反转-7\obj\Debug\3，整数反转-7.exe
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，整数反转-7\obj\Debug\3，整数反转-7.pdb
