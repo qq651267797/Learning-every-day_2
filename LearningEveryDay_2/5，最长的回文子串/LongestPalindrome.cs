@@ -17,25 +17,25 @@ namespace _5_最长的回文子串
 
     public class Solution
     {
-        public string LongestPalindrome(string input)
+        public string LongestPalindrome(string InputString)
         {
-            string outString = "";
-            if (input == null || input.Length == 0) {
-                return outString;
+            string OutputString = "";
+            if (InputString == null || InputString.Length == 0) {
+                return OutputString;
             }
-            if (input.Length == 1) {
-                return input;
+            if (InputString.Length == 1) {
+                return InputString;
             }
 
             int Left = 0;
             int Right = 1;
             //从中间到两边的检测方法
             //
-            for (int i = 0; i < input.Length; i++) {
+            for (int i = 0; i < InputString.Length; i++) {
                 int tempLeft = i - 1;
                 int tempRight = i + 1;
                 int tempMid = i;
-                while (tempLeft >= 0 && tempRight < input.Length && input[tempLeft] == input[tempRight]) {
+                while (tempLeft >= 0 && tempRight < InputString.Length && InputString[tempLeft] == InputString[tempRight]) {
                     if (tempRight - tempLeft + 1 > Right) {
                         Right = tempRight - tempLeft + 1;
                         Left = tempLeft;
@@ -45,11 +45,11 @@ namespace _5_最长的回文子串
                 }
             }
             //从中间到右边的逐步推移法
-            for (int i = 0; i < input.Length; i++) {
+            for (int i = 0; i < InputString.Length; i++) {
                 int tempLeft = i;
                 int tempRight = i + 1;
                 int tempMid = i;
-                while (tempLeft >= 0 && tempRight < input.Length && input[tempLeft] == input[tempRight]) {
+                while (tempLeft >= 0 && tempRight < InputString.Length && InputString[tempLeft] == InputString[tempRight]) {
                     if (tempRight - tempLeft + 1 > Right) {
                         Right = tempRight - tempLeft + 1;
                         Left = tempLeft;
@@ -58,8 +58,8 @@ namespace _5_最长的回文子串
                     tempRight++;
                 }
             }
-            outString = input.Substring(Left, Right);
-            return outString;
+            OutputString = InputString.Substring(Left, Right);
+            return OutputString;
         }
     }
     class LongestPalindrome
@@ -68,7 +68,7 @@ namespace _5_最长的回文子串
         {
             Solution ff = new Solution();
             string input = "babad";
-            //string temp = input.Substring(0, 1);
+            //string temp = InputString.Substring(0, 1);
             string outPut = ff.LongestPalindrome(input);
 
             //char[] tempArr = temp.ToCharArray();

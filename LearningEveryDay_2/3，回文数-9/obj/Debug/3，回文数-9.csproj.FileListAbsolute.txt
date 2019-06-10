@@ -1,0 +1,7 @@
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，回文数-9\bin\Debug\3，回文数-9.exe.config
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，回文数-9\bin\Debug\3，回文数-9.exe
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，回文数-9\bin\Debug\3，回文数-9.pdb
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，回文数-9\obj\Debug\3，回文数-9.csprojAssemblyReference.cache
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，回文数-9\obj\Debug\3，回文数-9.csproj.CoreCompileInputs.cache
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，回文数-9\obj\Debug\3，回文数-9.exe
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，回文数-9\obj\Debug\3，回文数-9.pdb

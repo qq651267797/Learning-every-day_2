@@ -415,16 +415,34 @@ namespace BasicGrammar_namespace
             //Console.WriteLine(iii + "                    ");
 
 
-            List<char> FirstListChar = new List<char>();
-            string str = "ABCDEFGHIJ";
-            foreach(char i in str) {
-                FirstListChar.Add(i);
-            }
+            //List<char> FirstListChar = new List<char>();
+            //string str = "ABCDEFGHIJ";
+            //foreach(char i in str) {
+            //    FirstListChar.Add(i);
+            //}
+            //foreach(char i in FirstListChar) {
+            //    Console.Write(i);
+            //    Console.WriteLine();
+            //}
 
-            foreach(char i in FirstListChar) {
-                Console.Write(i);
-                Console.WriteLine();
-            }
+            //string gg = "asdfg";
+            //char a = gg[0];
+            //if (47 < a && a < 58) {
+            //    Console.WriteLine(" 数字 ");
+            //}
+            //else {
+            //    Console.WriteLine(" 字母 ");
+            //}
+
+            int find = 3;
+            //find = find << 1;
+            find++;
+            Console.Write(find);
+            Console.WriteLine();
+            Console.WriteLine();
+
+
+
             Console.ReadKey();
         }
     }
