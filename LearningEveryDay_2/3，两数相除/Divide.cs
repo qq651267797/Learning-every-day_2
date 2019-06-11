@@ -93,33 +93,7 @@ namespace _3_两数相除
             return temp;
         }
 
-
-        //百度看的
-        //百度看的
-        //百度看的
-        //百度看的
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="Dividend"></param>
-        /// <param name="Divisor"></param>
-        /// <returns></returns>
         public int Divide2(int Dividend, int Divisor)
-        {
-            int num = 0;
-            int sum = Divisor;
-            while (Dividend >= Divisor) {
-                int Count = 1;
-                while(Dividend >= sum + sum) {
-                    Count += Count;
-                    sum += sum;
-                }
-                Dividend = Dividend - sum;
-                num = num + Count;
-            }
-            return num;
-        }
-        public int Divide3(int Dividend, int Divisor)
         {
             if (Dividend == 0) {
                 return 0;
@@ -183,52 +157,52 @@ namespace _3_两数相除
             Solution ff = new Solution();
             int i = 10;
             int j = 3;
-            int Quotient = ff.Divide3(i, j);
+            int Quotient = ff.Divide2(i, j);
             Console.WriteLine();
             Console.WriteLine(Quotient);
             Console.WriteLine();
 
             i = -10;
             j = 3;
-            Quotient = ff.Divide3(i, j);
+            Quotient = ff.Divide2(i, j);
             Console.WriteLine();
             Console.WriteLine(Quotient);
             Console.WriteLine();
 
             i = 10;
             j = -3;
-            Quotient = ff.Divide3(i, j);
+            Quotient = ff.Divide2(i, j);
             Console.WriteLine();
             Console.WriteLine(Quotient);
             Console.WriteLine();
 
             i = 0;
             j = 10;
-            Quotient = ff.Divide3(i, j);
+            Quotient = ff.Divide2(i, j);
             Console.WriteLine();
             Console.WriteLine(Quotient);
             Console.WriteLine();
 
             i = 50;
             j = 4;
-            Quotient = ff.Divide3(i, j);
+            Quotient = ff.Divide2(i, j);
             Console.WriteLine();
             Console.WriteLine(Quotient);
             Console.WriteLine();
 
             i = int.MaxValue;
             j = -1;
-            Quotient = ff.Divide3(i, j);
+            Quotient = ff.Divide2(i, j);
             Console.WriteLine();
             Console.WriteLine(Quotient);
             Console.WriteLine();
 
-            //i = int.MinValue;
-            //j = -1;
-            //Quotient = ff.Divide(i, j);
-            //Console.WriteLine();
-            //Console.WriteLine(Quotient);
-            //Console.WriteLine();
+            i = int.MinValue;
+            j = -1;
+            Quotient = ff.Divide2(i, j);
+            Console.WriteLine();
+            Console.WriteLine(Quotient);
+            Console.WriteLine();
 
 
 

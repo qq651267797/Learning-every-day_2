@@ -86,6 +86,15 @@ namespace BasicGrammar_namespace
             Console.WriteLine("num3 = " + num);
             return num;
         }
+        /// <summary>
+        /// input = 5 + 1 + 5 + 5;
+        /// </summary>
+        /// <param name="input"></param>
+        public int chuanzhi(int input ,out int input2)
+        {
+            input2 = 5 + 1 + 5 + 5 + input;
+            return 1;
+        }
     }
     class BasicGrammar
     {
@@ -437,10 +446,17 @@ namespace BasicGrammar_namespace
             int find = 3;
             //find = find << 1;
             find++;
+            int outfind = 0;
             Console.Write(find);
             Console.WriteLine();
             Console.WriteLine();
-
+            tooool ff = new tooool();
+            int ddd = ff.chuanzhi(find,out outfind);
+            //int 
+            Console.WriteLine(outfind);
+            Console.Write(ddd);
+            Console.WriteLine();
+            Console.WriteLine();
 
 
             Console.ReadKey();

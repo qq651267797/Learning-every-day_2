@@ -1,0 +1,7 @@
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，字符串转换整数-8\bin\Debug\3，字符串转换整数-8.exe.config
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，字符串转换整数-8\bin\Debug\3，字符串转换整数-8.exe
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，字符串转换整数-8\bin\Debug\3，字符串转换整数-8.pdb
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，字符串转换整数-8\obj\Debug\3，8-字符串转换整数.csprojAssemblyReference.cache
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，字符串转换整数-8\obj\Debug\3，8-字符串转换整数.csproj.CoreCompileInputs.cache
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，字符串转换整数-8\obj\Debug\3，字符串转换整数-8.exe
+D:\MyData\feijm\Documents\GitHub\Learning-every-day_2\LearningEveryDay_2\3，字符串转换整数-8\obj\Debug\3，字符串转换整数-8.pdb
