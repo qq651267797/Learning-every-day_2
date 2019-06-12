@@ -26,8 +26,8 @@ namespace _3_字符串转换整数_8
             bool Flag = true;
             int Left = 0;
             //int Right = 0;
-            int IntmAX = int.MaxValue;
-            int IntMin = int.MinValue;
+            //int IntmAX = int.MaxValue;
+            //int IntMin = int.MinValue;
 
             //去除前面的空格
             for (int i = 0; i < InputStringLength; i++) {
@@ -45,7 +45,6 @@ namespace _3_字符串转换整数_8
                 //Right++;
                 if (Left < InputStringLength && !(InputStr[Left] >= '0' && InputStr[Left] <= '9')) {
                     return OutputInt;
-                    //return OutputInt;
                 }
             }
             //如果是 负号
@@ -55,7 +54,6 @@ namespace _3_字符串转换整数_8
                 Flag = false;
                 if (Left < InputStringLength && !(InputStr[Left] >= '0' && InputStr[Left] <= '9')) {
                     return OutputInt;
-                    //return OutputInt;
                 }
             }
             //Left 和 Right 在同一起点线上
@@ -64,27 +62,24 @@ namespace _3_字符串转换整数_8
                 //如果是 数字
                 if (InputStr[Left] >= '0' && InputStr[i] <= '9') {
                     int InputStr_Int = InputStr[Left] - '0';
-                    //如果为 负数
-                    if (Flag && OutputInt >= int.MaxValue / 10 && InputStr_Int > 7) {
+
+                    //如果为 正数，但是大于int MAX
+                    if (Flag && OutputInt >= (int.MaxValue / 10) && InputStr_Int > 7) {
                         OutputInt = int.MaxValue;
                         return OutputInt;
                     }
-                    else if (!Flag && OutputInt <= int.MinValue / 10 && InputStr_Int > 8) {
-
+                    //如果为 负数，并且小于int Min
+                    else if (!Flag && OutputInt <= Math.Abs((int.MinValue / 10)) && InputStr_Int > 8) {
+                        OutputInt = int.MinValue;
+                        return OutputInt;
                     }
-
-                    //    OutputInt = OutputInt * 10 + InputStr_Int;
-                    //}
-                    //else if () {
-
-                    //}
-                    //else {
-                    //}
-
-                    Left++;
-                    if (Left < InputStringLength && !(InputStr[Left] >= '0' && InputStr[Left] <= '9')) {
-                        break;
-                        //OutputInt;
+                    //如果不为加完后 不大于且不小于，那就先加
+                    else {
+                        OutputInt = OutputInt * 10 + InputStr_Int;
+                        Left++;
+                        if (Left < InputStringLength && !(InputStr[Left] >= '0' && InputStr[Left] <= '9')) {
+                            break;
+                        }
                     }
                 }
                 //如果是 字母 或者 其他符号

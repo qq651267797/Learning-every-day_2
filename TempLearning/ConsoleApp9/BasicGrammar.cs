@@ -443,20 +443,24 @@ namespace BasicGrammar_namespace
             //    Console.WriteLine(" 字母 ");
             //}
 
-            int find = 3;
-            //find = find << 1;
-            find++;
-            int outfind = 0;
-            Console.Write(find);
-            Console.WriteLine();
-            Console.WriteLine();
-            tooool ff = new tooool();
-            int ddd = ff.chuanzhi(find,out outfind);
-            //int 
-            Console.WriteLine(outfind);
-            Console.Write(ddd);
-            Console.WriteLine();
-            Console.WriteLine();
+            //int find = 3;
+            ////find = find << 1;
+            //find++;
+            //int outfind = 0;
+            //Console.Write(find);
+            //Console.WriteLine();
+            //Console.WriteLine();
+            //tooool ff = new tooool();
+            //int ddd = ff.chuanzhi(find,out outfind);
+            ////int 
+            //Console.WriteLine(outfind);
+            //Console.Write(ddd);
+            //Console.WriteLine();
+            //Console.WriteLine();
+
+            string ff = "123456";
+            if()
+            ff.Replace("-", "");
 
 
             Console.ReadKey();

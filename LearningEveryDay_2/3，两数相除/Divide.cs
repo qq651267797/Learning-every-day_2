@@ -145,9 +145,7 @@ namespace _3_两数相除
                 DivisorAbs = DivisorAbs >> 1;
             }
 
-            return FinalSign ? Quotient : (~Quotient + 1);
-            //if (FinalSign) Quotient = 0 - Quotient;
-            //return (int)Quotient;
+            return (FinalSign ? Quotient : (~Quotient + 1));
         }
     }
     class Divide

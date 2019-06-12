@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3，9-回文数", "3，回�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3，12-整数转罗马数组-", "3，12-整数转罗马数组-\3，12-整数转罗马数组-.csproj", "{64FBBDDE-29F5-4E31-B3A5-0E048B3F7F81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3，13-罗马数字转整数", "3，13-罗马数字转整数\3，13-罗马数字转整数.csproj", "{29241608-5621-45AC-B2D1-86D8AA206186}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{64FBBDDE-29F5-4E31-B3A5-0E048B3F7F81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64FBBDDE-29F5-4E31-B3A5-0E048B3F7F81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64FBBDDE-29F5-4E31-B3A5-0E048B3F7F81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29241608-5621-45AC-B2D1-86D8AA206186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29241608-5621-45AC-B2D1-86D8AA206186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29241608-5621-45AC-B2D1-86D8AA206186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29241608-5621-45AC-B2D1-86D8AA206186}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
