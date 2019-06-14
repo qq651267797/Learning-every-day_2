@@ -1,0 +1,7 @@
+D:\MyData\feijm\source\repos\葫芦_指导\葫芦_指导\bin\Debug\葫芦_指导.exe.config
+D:\MyData\feijm\source\repos\葫芦_指导\葫芦_指导\bin\Debug\葫芦_指导.exe
+D:\MyData\feijm\source\repos\葫芦_指导\葫芦_指导\bin\Debug\葫芦_指导.pdb
+D:\MyData\feijm\source\repos\葫芦_指导\葫芦_指导\obj\Debug\葫芦_指导.csprojAssemblyReference.cache
+D:\MyData\feijm\source\repos\葫芦_指导\葫芦_指导\obj\Debug\葫芦_指导.csproj.CoreCompileInputs.cache
+D:\MyData\feijm\source\repos\葫芦_指导\葫芦_指导\obj\Debug\葫芦_指导.exe
+D:\MyData\feijm\source\repos\葫芦_指导\葫芦_指导\obj\Debug\葫芦_指导.pdb
