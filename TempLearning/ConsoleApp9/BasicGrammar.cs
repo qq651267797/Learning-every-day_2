@@ -458,10 +458,29 @@ namespace BasicGrammar_namespace
             //Console.WriteLine();
             //Console.WriteLine();
 
-            string ff = "123456";
-            if()
-            ff.Replace("-", "");
+            //int[] test = { 1, 24, 5, 87, 0, 53, 15, 100, 6 };
 
+            //int[] result = (
+            //    from val in test
+            //    where val > 5 && val < 100
+            //    select val
+            //    ).ToArray();
+
+            //List<int> list = new List<int>(result);
+            //foreach(int i in list) {
+            //    Console.WriteLine(i);
+            //}
+
+            List<int> Scoures = new List<int>() { 97, 92, 81, 60 };
+            IEnumerable<int> queryHighScores =
+                from score in Scoures
+                where score > 80
+                select score;
+
+            foreach(int i in queryHighScores) {
+                Console.WriteLine(i + " ");
+            }
+            
 
             Console.ReadKey();
         }
