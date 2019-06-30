@@ -5,3 +5,10 @@ D:\ALL Dowload\安装包\Learning-every-day_2-master\AvlTree\AvlTree\obj\Debug\A
 D:\ALL Dowload\安装包\Learning-every-day_2-master\AvlTree\AvlTree\obj\Debug\AvlTree.csproj.CoreCompileInputs.cache
 D:\ALL Dowload\安装包\Learning-every-day_2-master\AvlTree\AvlTree\obj\Debug\AvlTree.exe
 D:\ALL Dowload\安装包\Learning-every-day_2-master\AvlTree\AvlTree\obj\Debug\AvlTree.pdb
+D:\MyC#Demo\Learning-every-day_2\AvlTree\AvlTree\bin\Debug\AvlTree.exe.config
+D:\MyC#Demo\Learning-every-day_2\AvlTree\AvlTree\bin\Debug\AvlTree.exe
+D:\MyC#Demo\Learning-every-day_2\AvlTree\AvlTree\bin\Debug\AvlTree.pdb
+D:\MyC#Demo\Learning-every-day_2\AvlTree\AvlTree\obj\Debug\AvlTree.csprojAssemblyReference.cache
+D:\MyC#Demo\Learning-every-day_2\AvlTree\AvlTree\obj\Debug\AvlTree.csproj.CoreCompileInputs.cache
+D:\MyC#Demo\Learning-every-day_2\AvlTree\AvlTree\obj\Debug\AvlTree.exe
+D:\MyC#Demo\Learning-every-day_2\AvlTree\AvlTree\obj\Debug\AvlTree.pdb
