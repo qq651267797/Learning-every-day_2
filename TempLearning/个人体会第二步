@@ -225,4 +225,130 @@
 	如果在这两部分工作之间的某一点，你想进行检查，请明确地提出来。
 
 十六：《如何充分“使用”研发团队新人》——翟志军——http://showme.codes/2018-01-15/new-fish/
+
+十七：《吐槽：那些Java设计中不得不说的槽点》-王下七匹狼-https://juejin.im/post/5d1eaee86fb9a07ef161a1b1
+	1，求长度各有千秋
+		数组的长度
+		string的长度
+		集合的长度
+		
+	2，字符串的截取
+		public String substring(int beginIndex, int endIndex) {
+		  if (beginIndex < 0) {
+			  。。 。。 。。
+		  }
+		  if (endIndex > count) {
+			   。。 。。 。。
+		  }
+		  if (beginIndex > endIndex) {
+			   。。 。。 。。
+		  }
+		  return ((beginIndex == 0) && (endIndex == count)) ? this :
+		   new String(offset + beginIndex, endIndex - beginIndex, value);
+		}
+		当我们调用字符串 str 的 substring 得到字符串 subStr，其实这个操作，
+		无非就是调整了一下 subStr 的 offset 和 count ，用到的内容还是 str 之前的 value 字符数组，
+		并没有重新创建新的专属于 subStr 的内容字符数组。如果 subStr 的生命周期要长于 str 或者手动设置 str 为null，
+		当垃圾回收进行后，str 被回收掉，subStr 没有回收掉，那么内存占用依旧存在，因为 subStr 持有 str 字符数组的引用。
+
+十八：《高并发核心技术之 - 幂等性》-幂等性-https://juejin.im/post/5d1d6bbc5188250501476798
+	1，幂等性就是指：一个幂等操作任其执行多次所产生的影响均与一次执行的影响相同
+		幂等性问题经常会是由网络问题引起的，还有重复操作引起的。
+	2，场景一：比如点赞功能，一个用户只能对同一片文章点赞一次，重复点赞提示已经点过赞了。
+		public void like(Article article,User user) {
+			//检查是否点过赞
+			if (checkIsLike(article,user)) {
+				//点过赞了
+				throw new ApiException(CodeEnums.SYSTEM_ERR);
+			}
+			else {
+				//保存点赞
+				saveLike(article,user);
+			}
+		}
+		看上去好像没有什么问题，保存点赞之前已经检查过是否点赞了，理论上同一个人不会对同一篇文章重复点赞。
+		但实际不是这样的。因为网络请求不是排队进来的，而是一窝蜂涌进来的。
+		某些时候，用户网络不好，可能很短的时间内点击了多次，由于网络传输问题，这些请求可能会同时来到我们的服务器。
+
+		第一个请求 checkIsLike（） 返回 false ， 正在执行 saveLike() 操作，还没来的及提交事务
+		第二个请求过来了 ，checkIsLike（） 返回 也是 false , 并去 执行了 saveLike() 操作
+
+		这样子，就造成了一个用户同时对一篇文章进行了多次点赞操作。
+		这就是典型的幂等性问题， 操作了一次和操作了两次结果不一样，因为你多点了一次赞，按照幂等性原则 不管你点击了多少次结果都一样，只点了一次赞。
+		很多场景都是这样造成的，比如用户重复下单，重复评论，重复提交表单等。
+		那怎么解决呢？
+		假设网络的请求是排队进来的就不会出现这个问题了。
+		于是我们可以改成这样：
+		public synchronized void like(Article article,User user) {
+			//检查是否点过赞
+			if (checkIsLike(article,user)) {
+				//点过赞了
+			throw new ApiException(CodeEnums.SYSTEM_ERR);
+			}
+			else {
+				//保存点赞
+			saveLike(article,user);
+			}
+		}
+		synchronized 同步锁 这样我们的请求就会乖乖的排队进来了。
+
+		PS ：这样做是效率比较低的做法，不建议这么做，只是举例子，synchronized 也不适合分布式集群场景。
 	
+	3，解决幂等性问题方案
+		1，synchronized 适合单机应用，不追求性能 ，不追求并发。
+		2，分布式锁 但是往往我们的应用是分布式的集群，并且很讲究性能，并发，
+			所以我们需要用到 分布式锁 来解决这个问题。	
+
+十九：《工具类算法--快排的优化（Java）》-作者：defineYIDA-https://juejin.im/post/5d1c039d6fb9a07eb67daa82
+	
+	算法的运行时间耗费在：
+	1）比较元素；
+	2）移动元素。
+	
+	1，快速排序（quick sort）
+		元素移动次数少，元素比较次数多；
+	2，归并排序（merge sort）
+		元素移到次数多，元素比较次数最少。
+	如果移动次数比较少，就使用快排。
+	如果比较次数比较少，就使用归排。
+	
+	快速排序的处理方式。
+		从第一个排序方式开始。
+
+二十：《你所不知道的HelloWorld背后的执行原理》-饭谈编程-https://juejin.im/post/5d194e745188256e98090e93
+	整个代码的执行过程可以分为三个阶段：1，代码编译；2，类加载；3，类执行
+	1，代码编译的作用就是将我们编写的 Main.java文件转化为Main.class文件，.class在这里又被称为字节码文件
+		1，词法分析，即将源代码的字符流转变为Token集的过程
+			比如整型int在我们编程中它就是三个字符组成的，就是i、n、t 三个字符，而在编译过程中它就是一个Token，不可拆分。
+		2，语法分析，构建抽象语法树了，
+			所谓的抽象语法树其实就是一种用来描述程序代码语法结构的树形表示方式，
+			其中语法树的每一个节点都代表着程序代码中的一个语法结构，如包、类型、修饰符、运算符等。
+		3，填充符号表
+			符号表是由一组符号地址和符号信息构成的表格，
+			这个表格在编译的不同阶段都会被用到，如在目标代码生成阶段，会对符号名进行地址分配，而符号表就是地址分配的依据。
+		4，语义分析
+			语义分析，也就是语义检测阶段。检测语法树是否合理，语义分析会通过标注检查和数据及控制流分析检查两步入手，在生成字节码的最后一步信息把关
+		5，字节码生成，将前面各个步骤生成的信息转化成字节码然后放入磁盘中，还进行了少量的代码添加和转换工作，如我们自己重载的构造函数。
+	
+	2，类加载
+		由类加载器将编译后的字节码文件【Main.class】加载到虚拟机中
+		1，自定义加载器，使我们自己实现的
+		2，启动类加载器 Bootstrap ClassLoader 
+			启动类加载器的作用主要是加载 %JAVA_HOME%\jre\lib\rt.jar 类库，将其加载到虚拟机内存中
+		3，扩展类加载器 Extension ClassLoader
+			扩展类加载器的作用主要是负责加载JAVA_HOME\jre\lib\ext目录下的所有类库，主要是载入扩展包。
+		4，系统类加载器 Application ClassLoader
+			也称之为应用程序类加载器，负责加载用户类路径(也就是我们配置的CLASSPATH)上所指定的类库，是应用程序中默认的类加载。
+		
+		HelloWorld，就是系统类加载器 Application ClassLoader。
+			先加载===>	验证
+						||
+						准备
+						||
+						解析==>初始化
+			验证+准备+解析 称为链接阶段
+			
+		加载：由系统加载器，将编译后的.class文件加载到内存中，
+			抛出个问题，所谓的加载到内存中，我们都知道JVM把内存分成了几大模块，那么请问是加载到哪个模块中？热点面试题，答案见文末！
+		链接三部曲：将Main.class的二进制数据合并到JRE中
+			对传入的二进制数据流进行验证
