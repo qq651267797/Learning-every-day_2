@@ -207,6 +207,7 @@ namespace _3_链表的实现
             }
             return MinNode.Data;
         }
+
         /// <summary>
         /// 清空整个链表
         /// </summary>

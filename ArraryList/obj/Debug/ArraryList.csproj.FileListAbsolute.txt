@@ -1,0 +1,7 @@
+D:\MyC#Demo\ArraryList\obj\Debug\ArraryList.csprojAssemblyReference.cache
+D:\MyC#Demo\ArraryList\obj\Debug\ArraryList.csproj.CoreCompileInputs.cache
+D:\MyC#Demo\ArraryList\bin\Debug\ArraryList.exe.config
+D:\MyC#Demo\ArraryList\bin\Debug\ArraryList.exe
+D:\MyC#Demo\ArraryList\bin\Debug\ArraryList.pdb
+D:\MyC#Demo\ArraryList\obj\Debug\ArraryList.exe
+D:\MyC#Demo\ArraryList\obj\Debug\ArraryList.pdb
