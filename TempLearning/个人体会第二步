@@ -440,6 +440,28 @@
 			本地方法栈JNI引用的对象
 			
 二十三：《24小时学JavA》-XXXX - 
+	0，== 和 equals
+		1，==就是用来比较值是否相等
+			int n=3;
+			int m=3;
+			
+			System.out.println(n==m);
+			
+			String str = new String("hello");
+			String str1 = new String("hello");
+			String str2 = new String("hello");
+			
+			System.out.println(str1==str2);
+			
+			str1 = str;
+			str2 = str;
+			System.out.println(str1==str2);
+			
+			true
+			false
+			true
+		
+	
 	1，继承：把多个类的内容定义到一个类中：class SonClass extends FuClass {}
 		public class Animal {
 			public int xx = 10;
