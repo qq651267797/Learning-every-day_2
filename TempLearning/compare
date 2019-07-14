@@ -1,0 +1,53 @@
+	private static class MethodSignature implements Comparator {
+        Member member;
+        String signature;      // cached parameter signature
+
+        static MethodSignature[] removePrivateAndSort(Member[] m) {
+            int numNonPrivate = 0;
+            for (int i = 0; i < m.length; i++) {
+                if (! Modifier.isPrivate(m[i].getModifiers())) {
+                    numNonPrivate++;
+                }
+            }
+            MethodSignature[] cm = new MethodSignature[numNonPrivate];
+            int cmi = 0;
+            for (int i = 0; i < m.length; i++) {
+                if (! Modifier.isPrivate(m[i].getModifiers())) {
+                    cm[cmi] = new MethodSignature(m[i]);
+                    cmi++;
+                }
+            }
+            if (cmi > 0)
+                Arrays.sort(cm, cm[0]);
+            return cm;
+        }
+        /* Assumes that o1 and o2 are either both methods
+           or both constructors.*/
+        public int compare(Object o1, Object o2) {
+            if (o1 == o2)
+                return 0;
+            MethodSignature c1 = (MethodSignature)o1;
+            MethodSignature c2 = (MethodSignature)o2;
+            int result;
+            if (isConstructor()) {
+                result = c1.signature.compareTo(c2.signature);
+            } else { // is a Method.
+                result = c1.member.getName().compareTo(c2.member.getName());
+                if (result == 0)
+                    result = c1.signature.compareTo(c2.signature);
+            }
+            return result;
+        }
+
+        final private boolean isConstructor() {
+            return member instanceof Constructor;
+        }
+        private MethodSignature(Member m) {
+            member = m;
+            if (isConstructor()) {
+                signature = ObjectStreamClass.getSignature((Constructor)m);
+            } else {
+                signature = ObjectStreamClass.getSignature((Method)m);
+            }
+        }
+    }

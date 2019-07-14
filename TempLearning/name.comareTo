@@ -1,0 +1,13 @@
+public class ObjectStreamField implements Comparable{
+    public int compareTo(Object o) {
+        ObjectStreamField f2 = (ObjectStreamField)o;
+        boolean thisprim = (this.typeString == null);
+        boolean otherprim = (f2.typeString == null);
+
+        if (thisprim != otherprim) {
+            return (thisprim ? -1 : 1);
+        }
+        return this.name.compareTo(f2.name);
+    }
+
+private String typeString;          // iff object, typename
