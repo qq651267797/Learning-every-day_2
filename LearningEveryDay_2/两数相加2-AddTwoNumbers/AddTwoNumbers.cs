@@ -23,18 +23,24 @@ namespace 两数相加2_AddTwoNumbers
             List<int> OutPutList = new List<int>();
             int Carry = 0;  //进位 
             int Index = 0;
+            //输入的 第一个和第二个 数组 一个个的进行相加
             while (intFirstList.Count > Index && intSecondList.Count > Index) {
+                //用sum收集和
                 int SumOne = intFirstList[Index] + intSecondList[Index] + Carry;
+                //取得进位，是否需要进位
                 Carry = SumOne / 10;
+                //输出的list取得 相加的 余数。
                 OutPutList.Add(SumOne % 10);
                 Index++;
             }
+            //对未加完的数组 进行单独处理
             while (intFirstList.Count > Index) {
                 int SumTow = intFirstList[Index] + Carry;
                 Carry = SumTow / 10;
                 OutPutList.Add(SumTow % 10);
                 Index++;
             }
+            //对未加完的数组 进行单独处理
             while (intSecondList.Count > Index) {
                 int SumThree = intSecondList[Index] + Carry;
                 Carry = SumThree / 10;

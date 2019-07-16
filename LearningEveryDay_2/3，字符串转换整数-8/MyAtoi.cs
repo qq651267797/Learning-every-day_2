@@ -28,7 +28,6 @@ namespace _3_字符串转换整数_8
             //int Right = 0;
             //int IntmAX = int.MaxValue;
             //int IntMin = int.MinValue;
-
             //去除前面的空格
             for (int i = 0; i < InputStringLength; i++) {
                 if (InputStr[i] == ' ') {
