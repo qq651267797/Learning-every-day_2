@@ -19,3 +19,10 @@ D:\Git\Learning-every-day_2\TempLearning\ConsoleApp9\obj\Debug\基础语法方�
 D:\Git\Learning-every-day_2\TempLearning\ConsoleApp9\obj\Debug\基础语法方面.csproj.CoreCompileInputs.cache
 D:\Git\Learning-every-day_2\TempLearning\ConsoleApp9\obj\Debug\ConsoleApp9.exe
 D:\Git\Learning-every-day_2\TempLearning\ConsoleApp9\obj\Debug\ConsoleApp9.pdb
+D:\MyC#Demo\Learning-every-day_2\TempLearning\ConsoleApp9\bin\Debug\ConsoleApp9.exe.config
+D:\MyC#Demo\Learning-every-day_2\TempLearning\ConsoleApp9\bin\Debug\ConsoleApp9.exe
+D:\MyC#Demo\Learning-every-day_2\TempLearning\ConsoleApp9\bin\Debug\ConsoleApp9.pdb
+D:\MyC#Demo\Learning-every-day_2\TempLearning\ConsoleApp9\obj\Debug\基础语法方面.csprojAssemblyReference.cache
+D:\MyC#Demo\Learning-every-day_2\TempLearning\ConsoleApp9\obj\Debug\基础语法方面.csproj.CoreCompileInputs.cache
+D:\MyC#Demo\Learning-every-day_2\TempLearning\ConsoleApp9\obj\Debug\ConsoleApp9.exe
+D:\MyC#Demo\Learning-every-day_2\TempLearning\ConsoleApp9\obj\Debug\ConsoleApp9.pdb

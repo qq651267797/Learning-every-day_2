@@ -471,15 +471,18 @@ namespace BasicGrammar_namespace
             //    Console.WriteLine(i);
             //}
 
-            List<int> Scoures = new List<int>() { 97, 92, 81, 60 };
-            IEnumerable<int> queryHighScores =
-                from score in Scoures
-                where score > 80
-                select score;
+            //List<int> Scoures = new List<int>() { 97, 92, 81, 60 };
+            //IEnumerable<int> queryHighScores =
+            //    from score in Scoures
+            //    where score > 80
+            //    select score;
+            //foreach(int i in queryHighScores) {
+            //    Console.WriteLine(i + " ");
+            //}
 
-            foreach(int i in queryHighScores) {
-                Console.WriteLine(i + " ");
-            }
+            string s = "feijm";
+            string ss = s.Substring(1, 2);
+            Console.WriteLine(ss);
             
 
             Console.ReadKey();

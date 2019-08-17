@@ -119,7 +119,7 @@ namespace _3_链表的实现
         /// <returns></returns>
         public int GetCount()
         {
-            return size;
+            return this.size;
         }
         /// <summary>
         /// 返回链表的 首部
@@ -192,7 +192,9 @@ namespace _3_链表的实现
         {
             ListNode MinNode = new ListNode();
             MinNode.Data = this.ListHead.Data;
+
             ListNode tempNode = this.ListHead;
+
             if (this.ListHead == null) {
                 throw new Exception();
             }
@@ -263,10 +265,10 @@ namespace _3_链表的实现
                 this.ListLast = newNode;
             }
             else {
-                ListNode a = null;
-                ListNode b = this.ListHead;
-                for(int temp_length = 0; temp_length < index; temp_length++) {
-                    a = b.PreviousNode;
+                ListNode a = this.ListHead;
+                ListNode b = this.ListHead.NextNode;
+                for(int temp_length = 0; temp_length < index-1; temp_length++) {
+                    a = a.NextNode;
                     b = b.NextNode;
                 }
                 a.NextNode = newNode;
@@ -340,7 +342,7 @@ namespace _3_链表的实现
                 ListNode tempHead = this.ListHead;
                 while (tempHead != null) {
 
-                    Console.WriteLine(tempHead.Data + ",");
+                    Console.Write(tempHead.Data + ",");
                     tempHead = tempHead.NextNode;
                 }
             }
@@ -360,6 +362,7 @@ namespace _3_链表的实现
             ff.AddLast(8);
             ff.AddLast(2);
             ff.AddLast(9);
+            ff.InsertNode(1, 1111);
             ff.Print();
             Console.WriteLine("                    ");
             int Max = ff.GetMAX();
@@ -370,22 +373,24 @@ namespace _3_链表的实现
             //ff.DeleteFirst();
             //ff.DeleteLast();
             //ff.DeleteNode(ff.GetCount());
-            //ff.DeleteNode(1);
+            ff.DeleteNode(1);
+            ff.Print();
+            Console.WriteLine();
             int cou =  ff.GetCount();
             Console.WriteLine("size = " + cou);
 
-            MySatck xx = new MySatck();
+            //MySatck xx = new MySatck();
 
-            xx.Push_Stack(1);
-            xx.Push_Stack(0);
-            xx.Push_Stack(3);
-            xx.Push_Stack(6);
-            xx.Push_Stack(10);
-            int poppp = xx.Pop_Stack();
-            Console.WriteLine(poppp);
+            //xx.Push_Stack(1);
+            //xx.Push_Stack(0);
+            //xx.Push_Stack(3);
+            //xx.Push_Stack(6);
+            //xx.Push_Stack(10);
+            //int poppp = xx.Pop_Stack();
+            //Console.WriteLine(poppp);
 
-            int pekk = xx.Peek_Stack();
-            Console.WriteLine(pekk);
+            //int pekk = xx.Peek_Stack();
+            //Console.WriteLine(pekk);
             
 
             Console.ReadKey();

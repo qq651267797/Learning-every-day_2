@@ -5,7 +5,7 @@ package com.ComlexJavaClass.StedentSubject;
  * 1，可以找到一门课程，以及参加此课程的所有学生信息 以及 成绩
  * 2，可以根据一个学生，找到所参加的所有课程 和 每门课程的成绩
  */
-public class StudentSelecSbuject {
+public class FinalOutput {
     public static void main(String[] args) {
         //第一步 根据结构，设置对象间的关系
         //1，创建各自的独立对象

@@ -1,0 +1,7 @@
+D:\MyC#Demo\Learning-every-day_2\LearningEveryDay_2\3，栈的实现\bin\Debug\3，栈的实现.exe.config
+D:\MyC#Demo\Learning-every-day_2\LearningEveryDay_2\3，栈的实现\bin\Debug\3，栈的实现.exe
+D:\MyC#Demo\Learning-every-day_2\LearningEveryDay_2\3，栈的实现\bin\Debug\3，栈的实现.pdb
+D:\MyC#Demo\Learning-every-day_2\LearningEveryDay_2\3，栈的实现\obj\Debug\3，链表-栈的实现.csprojAssemblyReference.cache
+D:\MyC#Demo\Learning-every-day_2\LearningEveryDay_2\3，栈的实现\obj\Debug\3，链表-栈的实现.csproj.CoreCompileInputs.cache
+D:\MyC#Demo\Learning-every-day_2\LearningEveryDay_2\3，栈的实现\obj\Debug\3，栈的实现.exe
+D:\MyC#Demo\Learning-every-day_2\LearningEveryDay_2\3，栈的实现\obj\Debug\3，栈的实现.pdb

@@ -1,0 +1,189 @@
+Sql的语法
+
+
+1，创建sql的数据库
+	//创建一个数据库
+	create database sqltest	
+
+
+D:\java101\二班\小二 25分.txt
+
+jdbctemplate
+
+2，新建一个表
+	我们应该为每张表设置一个自动增长的列，并且为主键，且字段类型为unsigned（未签字的），
+	然后为auto_increment（自动增长的），并且请不要使用varchar类型的字段作为主键，即使是唯一的。
+
+	// 在sqltest里面，创建一个名为testOne的表
+	create table testOne(
+		// 属性id 为 int的整数型，不能为空，设置为主键
+		id INT NOT NULL PRIMARY KEY,
+		// 属性name 字符串型
+		name VARCHAR(50),
+		// 属性age 整数型
+		age int
+	);
+	
+3，插入数据，
+	INSERT INTO 语句用于向表格中插入新的行。 
+	语法：INSERT INTO 表名称 VALUES (值1, 值2,....) 
+	语法：INSERT INTO 表名称 (列1, 列2,...) VALUES (值1, 值2,....)
+	
+	// 对testone插入数据，并且数据列数，要和 VALUES (2,'test2',21) 的列数相同
+	INSERT INTO testone VALUES (2,'test2',21);
+	/* 在 student表格中进行部分的插入，id列和name列 插入数据，要注意有些列不可以为空*/
+	INSERT INTO student(`name`, id) VALUES ('student10',33);
+	INSERT INTO day28student(`studentUUID`, `studentUserName`, `studentName`, studentAge, `studentClassName`) VALUES('2','2','2',2,'2')
+
+4，查询数据
+	SELECT 语句用于从表中选取数据。 
+	语法：SELECT 列名称 FROM 表名称 
+	语法：SELECT * FROM 表名称
+	
+	// 查询testone表格
+	// select * 意思是查询所有属性，
+	SELECT * FROM testone;
+	// 查询属性为 id 的数据
+	SELECT id FROM testone;		SELECT `id` FROM testone;
+	SELECT name FROM testone;	SELECT `name` FROM testone;
+	SELECT age FROM testone;	SELECT `age` FROM testone;
+	
+	// 查询testone表格，属性为 age 和 name
+	SELECT `age`,`name` FROM testone
+	SELECT `age`,`name` FROM testone;
+	
+	// 查询testone表格 ， 属性为age 和 name，同时 id 必须等于 1
+	SELECT `age`,`name` FROM testone WHERE id = 1
+	SELECT `age`,`name` FROM testone WHERE id = 1;
+	
+	// 但是，打印出来的表格，必须是和你所查询的数据在列上面是相同的
+	// name age id，列数完全一致
+	SELECT name,age,id FROM testone WHERE id = 1
+	
+	/*查询有条件的数据*/
+	/* 两个位置的nt，没有意义，是个变量 */
+	/* 查询student表中，id为3 4 5的数据，同时age不等于2的数据 */
+	SELECT nt.id FROM student nt WHERE id IN (3,5) AND age NOT IN (2);
+	//查询student表中，name列的数据
+	SELECT NAME FROM student;
+	
+	/* 查询student表中，id大于的所有行数数据 */
+	SELECT * FROM student WHERE id>3;
+	
+	where
+	=  等于
+	!= 不等于
+	< 小于
+	> 大于
+	<= 小于等于
+	>= 大于等于 
+	BETWEEN 在指定两个值之间
+	除了上面这些，有一个不太常见的操作符号
+	<>,代表不等于，与!= 同义
+	
+	查询testone表格中，共有多少条数据
+	SELECT COUNT(age) FROM testone;
+	查询testone表格中，age 大于等于 20的数据一共有多少条
+	SELECT COUNT(age) FROM testone WHERE age >= 20
+	查询testone表格中，age 大于 20，并且 小于 30 的数据一共有多少条
+	select count(age) from testone where age > 20 and age < 30
+	SELECT * FROM student WHERE student.id=11 AND student.age = 2;
+	查询student表中，id = 11 或者 age = 1的所有的数据
+	SELECT * FROM student WHERE student.id=11 OR student.age = 1;
+	
+	对着testone的表格，按id降序排序，会显示所有的列数据
+	SELECT * FROM testone ORDER BY id DESC
+	对着student的表格，按id降序排序，只会显示 id 列的数据
+	SELECT student.id FROM student ORDER BY id DESC
+	age列以降序显示，id以顺序显示。 DESC 以降序显示公司名称，并 ASC 以顺序显示
+	同时，谁写在前面，那就是谁优先级更高
+	SELECT * FROM student ORDER BY student.age DESC ,student.id ASC ;
+	
+	查询student.name 中，值为括号里面的所有列
+	SELECT * FROM student WHERE student.`name` in('fei3','zhao4','wang5');
+	NOT的用法，要写在过滤的前面，
+	SELECT * FROM student WHERE NOT student.`name` = 'zhao4'
+	AND student.`name` in('fei3','zhao4','wang5');
+	
+	列出所有在 testone 和 student 的不同的 name
+	SELECT NAME FROM student 
+	UNION
+	SELECT NAME FROM testone;
+	
+	查询两个表里面，关于ON的两个字段，重复的地方	（内连接）
+	SELECT * FROM student INNER JOIN studenttwo 
+	ON student.`name`= studenttwo.`name`;
+	交叉连接，笛卡尔连接
+	SELECT * FROM student INNER JOIN studenttwo ;
+	去重查询
+	SELECT DISTINCT `name` FROM student;
+	只有两个都重复，才会去重
+	SELECT DISTINCT `name`,id FROM student;
+	返回前三条数据
+	SELECT `name` FROM student LIMIT 3;
+	可以限制，返回的数据是从第2行开始后面的2条
+	SELECT `name` FROM student LIMIT 2 OFFSET 2;
+	%代表搜索模式中给定位置的0个、1个或多个字符。
+	在一个查询语句中也可以使用多个%通配符
+	SELECT student.`name` FROM student WHERE student.`name` LIKE '%an%';
+	
+	
+5，修改数据
+	语法：UPDATE 表名称 SET 列名称 = 新值 WHERE 列名称 = 某值
+
+	// 修改testone表格，并且修改属性为name的数据，同时 id 必须等于 2
+	UPDATE testone set `name` = 'updata22' WHERE id = 2;
+
+6，删除数据
+	// 删除数据，删除来自testone表，同时 id 为 2 的数据
+	DELETE FROM testone WHERE id = 2;
+	DELETE FROM testone WHERE 'id' = 2;
+	删除数据，删除来自testone表，id 为 2,3的两行数据
+	DELETE from testone where id in (2,3);
+	/* 清空整个表 */
+	DELETE FROM table_name;
+	DELETE * FROM table_name;
+
+7,ALTER TABLE testone RENAME TO studenttwo;
+	
+	
+7，表连接的查询
+	查询 teacher 表格中的，属性为name的，同时id为(返回 id = 1)，，得到，teacher1
+		查询student表格中的，属性为age的，同时name属性为 zhang1的值（此处返回 age = 1）
+	
+	SELECT NAME FROM teacher WHERE id = (SELECT age FROM student WHERE name = 'zhang1');
+	
+	student表格
+	id   name       age(本来应该是teacher_id)
+	"1"	"zhang1"	"1"
+	"2"	"wan2"		"1"
+	"3"	"fei3"		"1"
+	"4"	"zhao4"		"2"
+	"5"	"wang5"		"2"
+	
+	teacher表格
+	id   name
+	"1"	"teacher1"
+	"2"	"teacher2"
+
+	修改数据，修改student表格，条件为 id = 1，从原来的name 修改为 student3，
+		查询testone表格，id = 3 的 name，并返回（student3）
+		查询teacher中，name = teacher1 的  id 值，并返回 1 
+	UPDATE student SET `name` = (
+	SELECT `name` FROM testone WHERE testone.id = 3) 
+	WHERE id = (
+	SELECT id FROM teacher WHERE teacher.`name` = 'teacher1');
+	
+	/* 在student表格中，插入来自于testone表格中的数据，可以部分插入 */
+	INSERT INTO student(id ,age,`name`) 
+	SELECT testone.id,testone.age,testone.`name` FROM testone WHERE id = 6;
+	INSERT INTO student(id ,age,`name`) 
+	SELECT test.id,test.age,test.`name` FROM testone test WHERE id = 6;
+	INSERT INTO student(id ,`name`) 
+	SELECT test.id,test.`name` FROM testone test WHERE id = 7;
+	
+分页查询
+
+
+	
+	

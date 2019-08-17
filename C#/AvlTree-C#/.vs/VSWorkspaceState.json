@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\AvlTree",
+    "\\AvlTree\\bin",
+    "\\AvlTree\\obj"
   ],
   "SelectedNode": "\\AvlTree.sln",
   "PreviewInSolutionExplorer": false

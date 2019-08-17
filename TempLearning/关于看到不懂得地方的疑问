@@ -51,3 +51,23 @@
 18，迭代器
 
 19，String.replace
+
+        FileInputStream fis = new FileInputStream("FileOutputStreamDemo.java");
+
+
+        FileOutputStream fos = new FileOutputStream("fos.txt");
+
+        fos.write("hello,IOgdgfgdfdgd".getBytes());
+        fos.write("java".getBytes());
+
+        fos.close();
+
+20，接口的设计模式
+	工厂 代理 单例
+
+21，IDEA 链接mysql
+
+
+
+
+
